@@ -1,0 +1,771 @@
+{
+	"categories": {
+		"news": {
+			"name": "News"
+		},
+		"companies/delta-air-lines": {
+			"name": "Delta Air Lines"
+		},
+		"united-airlines": {
+			"name": "United Airlines"
+		},
+		"companies": {
+			"name": "Companies"
+		},
+		"companies/coreweave": {
+			"name": "CoreWeave"
+		},
+		"stock-trend": {
+			"name": "Stock Trend"
+		},
+		"earnings": {
+			"name": "Earnings"
+		},
+		"companies/nike": {
+			"name": "Nike"
+		},
+		"stocks-2": {
+			"name": "Stocks"
+		},
+		"companies/airbnb": {
+			"name": "Airbnb"
+		},
+		"uber": {
+			"name": "Uber"
+		},
+		"tyson": {
+			"name": "Tyson"
+		},
+		"companies/costco": {
+			"name": "Costco"
+		},
+		"companies/the-new-york-times": {
+			"name": "The New York Times"
+		},
+		"retail": {
+			"name": "Retail"
+		},
+		"unitedhealth-group": {
+			"name": "UnitedHealth Group"
+		},
+		"artificial-intelligence": {
+			"name": "Artificial Intelligence"
+		},
+		"business-trend": {
+			"name": "Business Trend"
+		},
+		"cybersecurity": {
+			"name": "Cybersecurity"
+		},
+		"software": {
+			"name": "Software"
+		},
+		"companies/comcast": {
+			"name": "Comcast"
+		},
+		"leisure-and-hospitality": {
+			"name": "Leisure and Hospitality"
+		},
+		"movie-theatres": {
+			"name": "Movie Theatres"
+		},
+		"corporate-strategy": {
+			"name": "Corporate Strategy"
+		},
+		"companies/electronic-arts": {
+			"name": "Electronic Arts"
+		},
+		"personal-finance": {
+			"name": "Personal Finance"
+		},
+		"tech": {
+			"name": "Tech"
+		},
+		"estee-lauder-inc": {
+			"name": "Estee Lauder Inc."
+		},
+		"companies/best-buy": {
+			"name": "Best Buy"
+		},
+		"crypto": {
+			"name": "Crypto"
+		},
+		"alphabet-inc": {
+			"name": "Alphabet Inc."
+		},
+		"energy": {
+			"name": "Energy"
+		},
+		"companies/nextera-energy": {
+			"name": "NextEra Energy"
+		},
+		"energy/nuclear": {
+			"name": "Nuclear"
+		},
+		"affirm": {
+			"name": "Affirm"
+		},
+		"coinbase": {
+			"name": "Coinbase"
+		},
+		"coinbase/crypto-coinbase": {
+			"name": "Crypto Coinbase"
+		},
+		"thermo-fisher-scientific": {
+			"name": "Thermo Fisher Scientific"
+		},
+		"banks": {
+			"name": "Banks"
+		},
+		"banks/wells-fargo": {
+			"name": "Wells Fargo"
+		},
+		"cryptocurrency": {
+			"name": "Cryptocurrency"
+		},
+		"payments": {
+			"name": "Payments"
+		},
+		"companies/darden": {
+			"name": "Darden"
+		},
+		"companies/avangrid": {
+			"name": "Avangrid"
+		},
+		"energy/renewable": {
+			"name": "Renewable"
+		},
+		"general-electric": {
+			"name": "General Electric"
+		},
+		"companies/gap": {
+			"name": "Gap"
+		},
+		"solar": {
+			"name": "Solar"
+		},
+		"aerospace-and-defense": {
+			"name": "Aerospace and Defense"
+		},
+		"kratos": {
+			"name": "Kratos"
+		},
+		"planet-labs": {
+			"name": "Planet Labs"
+		},
+		"health-care": {
+			"name": "Health care"
+		},
+		"moderna": {
+			"name": "Moderna"
+		},
+		"pfizer": {
+			"name": "Pfizer"
+		},
+		"pharmaceuticals": {
+			"name": "Pharmaceuticals"
+		},
+		"american-eagle": {
+			"name": "American Eagle"
+		},
+		"att-2": {
+			"name": "AT&T"
+		},
+		"small-business": {
+			"name": "Small Business"
+		},
+		"small-businesses": {
+			"name": "Small businesses"
+		},
+		"companies/lululemon": {
+			"name": "Lululemon"
+		},
+		"companies/snap": {
+			"name": "Snap"
+		},
+		"eli-lilly": {
+			"name": "Eli lilly"
+		},
+		"target": {
+			"name": "Target"
+		},
+		"companies/target-companies": {
+			"name": "Target Companies"
+		},
+		"taylor-swift": {
+			"name": "Taylor Swift"
+		},
+		"reits": {
+			"name": "REITS"
+		},
+		"evs": {
+			"name": "EVs"
+		},
+		"oil": {
+			"name": "Oil"
+		},
+		"covid-19": {
+			"name": "COVID-19"
+		},
+		"heard-on-the-street": {
+			"name": "Heard on the Street"
+		},
+		"rivian": {
+			"name": "Rivian"
+		},
+		"tesla-2": {
+			"name": "Tesla"
+		},
+		"health-insurance": {
+			"name": "Health Insurance"
+		},
+		"companies/nvidia-companies": {
+			"name": "Nvidia Companies"
+		},
+		"companies/netflix": {
+			"name": "Netflix"
+		},
+		"companies/tesla": {
+			"name": "Tesla"
+		},
+		"livent": {
+			"name": "Livent"
+		},
+		"companies/amazon": {
+			"name": "Amazon"
+		},
+		"axsome-therapeutics": {
+			"name": "Axsome Therapeutics"
+		},
+		"rent-the-runway": {
+			"name": "Rent the Runway"
+		},
+		"companies/facebook": {
+			"name": "Facebook"
+		},
+		"companies/intel": {
+			"name": "Intel"
+		},
+		"facebook-2": {
+			"name": "Facebook"
+		},
+		"mcdonalds": {
+			"name": "McDonald's"
+		},
+		"social-media": {
+			"name": "Social Media"
+		},
+		"companies/cvs": {
+			"name": "CVS"
+		},
+		"fox": {
+			"name": "Fox"
+		},
+		"cigna": {
+			"name": "Cigna"
+		},
+		"companies/amd": {
+			"name": "AMD"
+		},
+		"novo-nordisk": {
+			"name": "Novo Nordisk"
+		},
+		"sanofi": {
+			"name": "Sanofi"
+		},
+		"twitter-2": {
+			"name": "Twitter"
+		},
+		"pinterest": {
+			"name": "Pinterest"
+		},
+		"pinterest/pinterest-pinterest": {
+			"name": "Pinterest Pinterest"
+		},
+		"companies/twitter": {
+			"name": "Twitter"
+		},
+		"companies/ford-companies": {
+			"name": "Ford Companies"
+		},
+		"general-motors": {
+			"name": "General Motors"
+		},
+		"beyond-meat": {
+			"name": "Beyond Meat"
+		},
+		"companies/peloton": {
+			"name": "Peloton"
+		},
+		"peloton-2": {
+			"name": "Peloton"
+		},
+		"companies/starbucks": {
+			"name": "Starbucks"
+		},
+		"previews": {
+			"name": "Previews"
+		},
+		"companies/hilton-hotels": {
+			"name": "Hilton Hotels"
+		},
+		"companies/american-airlines": {
+			"name": "American Airlines"
+		},
+		"companies/boeing": {
+			"name": "Boeing"
+		},
+		"news/hardware": {
+			"name": "Hardware"
+		},
+		"paypal": {
+			"name": "PayPal"
+		},
+		"shopify": {
+			"name": "Shopify"
+		},
+		"square": {
+			"name": "Square"
+		},
+		"companies/att": {
+			"name": "AT&T"
+		},
+		"farmers-market": {
+			"name": "Farmers' market"
+		},
+		"companies/yeti": {
+			"name": "Yeti"
+		},
+		"companies/etsy": {
+			"name": "Etsy"
+		},
+		"companies/match-group": {
+			"name": "Match Group"
+		},
+		"companies/mirror": {
+			"name": "Mirror"
+		},
+		"astrazeneca": {
+			"name": "Astrazeneca"
+		},
+		"companies/huawei": {
+			"name": "Huawei"
+		},
+		"companies/overstock": {
+			"name": "Overstock"
+		},
+		"wayfair": {
+			"name": "Wayfair"
+		},
+		"companies/wayfair-companies": {
+			"name": "Wayfair Companies"
+		},
+		"companies/williams-sonoma": {
+			"name": "Williams-Sonoma"
+		},
+		"apple": {
+			"name": "Apple"
+		},
+		"companies/planet-fitness": {
+			"name": "Planet Fitness"
+		},
+		"companies/apple-companies": {
+			"name": "Apple Companies"
+		},
+		"companies/archer-daniels-midland": {
+			"name": "Archer Daniels Midland"
+		}
+	},
+	"authors": {
+		"chrissywang70": {
+			"name": "chrissywang70"
+		},
+		"michaelflowers-2-2-2": {
+			"name": "Michael Flowers"
+		},
+		"nancyjiang-2-2-2": {
+			"name": "Nancy Jiang"
+		},
+		"nicksong46": {
+			"name": "Nick Song"
+		},
+		"simongalkevich-2-2-2": {
+			"name": "Simon Galkevich"
+		},
+		"gracethomas-2-2-2": {
+			"name": "Grace Thomas"
+		},
+		"juliaalmazova-2-2-2": {
+			"name": "By Yulia Almazova"
+		},
+		"celiabernhardt36": {
+			"name": "Celia Bernhardt"
+		},
+		"sophiehayssen-2-2-2": {
+			"name": "Sophie Hayssen"
+		},
+		"cvanmiltenburg05": {
+			"name": "Cole van Miltenburg"
+		},
+		"nazeefaahmed-2-2-2": {
+			"name": "Nazeefa Ahmed"
+		},
+		"mahoganybrim51": {
+			"name": "Mahogany Brim"
+		},
+		"stephanie-hong-2-2-2": {
+			"name": "Stephanie Hong"
+		},
+		"caseywetherbee": {
+			"name": "Casey Wetherbee"
+		},
+		"lilliansyme-2-2-2": {
+			"name": "Lillian Syme"
+		},
+		"fariharahman-2-2-2": {
+			"name": "Fariha Rahman"
+		},
+		"imilanez-2-2-2": {
+			"name": "Irene Milanez"
+		},
+		"emmamurphy13": {
+			"name": "Emma Ferrara"
+		},
+		"amowreader32": {
+			"name": "Ashley Mowreader"
+		},
+		"celia-bernhardt": {
+			"name": "Celia Bernhardt"
+		},
+		"samimarshak-2-2-2": {
+			"name": "Sami Marshak"
+		},
+		"cherrysalazar-2-2-2": {
+			"name": "Cherry Salazar"
+		},
+		"jarrodbarry-2-2-2": {
+			"name": "Jarrod Barry"
+		},
+		"livveazey-2-2-2": {
+			"name": "Olivya Veazey"
+		},
+		"shenaltissera-2-2-2": {
+			"name": "shenal.tissera"
+		},
+		"sophiascorziello09": {
+			"name": "Sophia Scorziello"
+		},
+		"nikobalkaran-2-2-2": {
+			"name": "Niko Balkaran"
+		},
+		"elisamuyl": {
+			"name": "Elisa Muyl"
+		},
+		"juanlasso-2-2-2": {
+			"name": "Juan Lasso"
+		},
+		"ellafeldman-2-2-2": {
+			"name": "Ella Feldman"
+		},
+		"quinnwaller-2-2-2": {
+			"name": "Quinn Waller"
+		},
+		"paigeoamek-2-2-2": {
+			"name": "paige.oamek"
+		},
+		"franknavarrete-2-2-2": {
+			"name": "Frank Navarrete"
+		},
+		"rhyannonbartlett-imadegawa-2-2-2": {
+			"name": "Rhyannon Bartlett-Imadegawa"
+		},
+		"delfinamarchese-2-2-2": {
+			"name": "Delfina Marchese"
+		},
+		"zhenjiazhang-2-2-2": {
+			"name": "zhenjia.zhang"
+		},
+		"sabrinaortiz-2-2-2": {
+			"name": "Sabrina Ortiz"
+		},
+		"andrewserulneck-2-2-2": {
+			"name": "Andrew Serulneck"
+		},
+		"evelinfajardo-alvarez-2": {
+			"name": "E Fajardo-Alvarez"
+		},
+		"hannahfierick-2": {
+			"name": "Hannah Fierick"
+		},
+		"truthheadlam-2": {
+			"name": "Truth Headlam"
+		},
+		"emilydavis-2": {
+			"name": "Emily Davis"
+		},
+		"lauraturbay-2": {
+			"name": "Laura Turbay"
+		},
+		"jianasmith-2": {
+			"name": "Jiana Smith"
+		},
+		"gennacontino-2": {
+			"name": "Genna Contino"
+		},
+		"dianaescamillafuentes-2": {
+			"name": "D Escamillafuentes"
+		},
+		"coraliecarlson-2": {
+			"name": "Coralie Carlson"
+		},
+		"eliotforce-2": {
+			"name": "Eliot Force"
+		},
+		"lilahburke-2": {
+			"name": "Lilah Burke"
+		},
+		"carlosgarcia-2": {
+			"name": "Carlos Garcia"
+		},
+		"fenixsuriel-2": {
+			"name": "Fenix Suriel"
+		},
+		"carolinehandel": {
+			"name": "Caroline Handel"
+		},
+		"shukriabayan": {
+			"name": "Shukria Bayan"
+		},
+		"gerardedic": {
+			"name": "Gerard Edic"
+		},
+		"andrewancheta": {
+			"name": "Andrew Ancheta"
+		},
+		"mariamkiparoidze": {
+			"name": "Mariam Kiparoidze"
+		},
+		"jamesvanbramer": {
+			"name": "James Van Bramer"
+		},
+		"franciscouranga": {
+			"name": "Francisco Uranga"
+		},
+		"divyamurthy": {
+			"name": "Divya Murthy"
+		},
+		"nicholasmorgan": {
+			"name": "Nicholas Morgan"
+		},
+		"josephlingad": {
+			"name": "Joseph Lingad"
+		},
+		"arvelissebonillaramos": {
+			"name": "Arvelisse Bonilla Ramos"
+		},
+		"chrisjanaro": {
+			"name": "Chris Janaro"
+		},
+		"jonnathanpullavelecela": {
+			"name": "Jonnathan Pulla Velecela"
+		},
+		"mrinalininayak": {
+			"name": "Mrinalini Nayak"
+		},
+		"tiarawhite": {
+			"name": "Tiara White"
+		},
+		"safiyahriddle": {
+			"name": "Safiyah Riddle"
+		},
+		"yiliu": {
+			"name": "Yi Liu"
+		},
+		"impusehgal": {
+			"name": "Impu Sehgal"
+		},
+		"vitadadoolomeli": {
+			"name": "Vita Dadoo Lomeli"
+		},
+		"anasola": {
+			"name": "Ana Teresa Solá"
+		},
+		"trinamannino": {
+			"name": "Trina Mannino"
+		},
+		"randilove": {
+			"name": "Randi Love"
+		},
+		"cailleylapara": {
+			"name": "Cailley LaPara"
+		},
+		"davidwestenhaver": {
+			"name": "David Westenhaver"
+		},
+		"briannamonsanto": {
+			"name": "Brianna Monsanto "
+		},
+		"jamesodonnell": {
+			"name": "James O'Donnell"
+		},
+		"petertomao": {
+			"name": "Pete Tomao"
+		},
+		"molly-boigon": {
+			"name": "Molly Boigon"
+		},
+		"andrebeganski": {
+			"name": "Andre Beganski"
+		},
+		"lucypapachristou": {
+			"name": "Lucy Papachristou"
+		},
+		"mollyboigon": {
+			"name": "Molly Boigon"
+		},
+		"elizabethnapolitano": {
+			"name": "Elizabeth Napolitano"
+		},
+		"ginaheeb": {
+			"name": "Gina Heeb"
+		},
+		"oliviamorley": {
+			"name": "Olivia Morley"
+		},
+		"brianevans": {
+			"name": "Brian Evans"
+		},
+		"angelapalumbo": {
+			"name": "Angela Palumbo"
+		},
+		"joconstantz": {
+			"name": "Jo Constantz"
+		},
+		"angeladegbesan": {
+			"name": "Angel Adegbesan"
+		},
+		"franciscovalezquezturcios": {
+			"name": "Francisco Velasquez"
+		},
+		"nataliepeart": {
+			"name": "Natalie Peart"
+		},
+		"allisonsmith": {
+			"name": "Allison Nicole Smith"
+		},
+		"patrickelliott": {
+			"name": "Patrick Elliott"
+		},
+		"julietschaeferjeske": {
+			"name": "Juliet Jeske"
+		},
+		"dennyjacob": {
+			"name": "Denny Jacob"
+		},
+		"keirawingate": {
+			"name": "Keira Wingate"
+		},
+		"keithwright": {
+			"name": "K. Jared Wright"
+		},
+		"jessicalemer": {
+			"name": "Jessica Lerner"
+		},
+		"alexandrawhite": {
+			"name": "Alexandra White"
+		},
+		"cheyenneligon": {
+			"name": "Cheyenne Ligon"
+		},
+		"ariavelasquez": {
+			"name": "Aria Velasquez"
+		},
+		"minjikoo": {
+			"name": "Minji Koo"
+		},
+		"harinichakrapani": {
+			"name": "Harini Chakrapani"
+		},
+		"amandaglodowski": {
+			"name": "Amanda Glodowski"
+		},
+		"suzannahcavanaugh": {
+			"name": "Suzannah Cavanaugh"
+		},
+		"leilahmaidan": {
+			"name": "Laila Maidan"
+		},
+		"williamjohnson": {
+			"name": "William Johnson"
+		},
+		"erika-wheless": {
+			"name": "Erika Wheless"
+		},
+		"macarenacarrizosa": {
+			"name": "Macarena Carrizosa"
+		},
+		"dalvinbrown": {
+			"name": "Dalvin Brown"
+		},
+		"colinkern": {
+			"name": "Colin Kern"
+		},
+		"jillshah": {
+			"name": "Jill Shah"
+		},
+		"analuciamurillo": {
+			"name": "Ana Lucia Murillo"
+		},
+		"sonyaswink": {
+			"name": "Sonya Swink"
+		},
+		"baidiwang": {
+			"name": "Baidi Wang"
+		},
+		"hollydeaton": {
+			"name": "Holly Deaton"
+		},
+		"erikawheless": {
+			"name": "Erika Wheless"
+		},
+		"maliquemorris": {
+			"name": "Malique Morris"
+		},
+		"samuelsharpe": {
+			"name": "Sam Sharpe"
+		},
+		"koreymatthews": {
+			"name": "Korey Matthews"
+		},
+		"hafsaquraishi": {
+			"name": "Hafsa Quraishi"
+		},
+		"jazmingoodwin": {
+			"name": "Jazmin Goodwin"
+		},
+		"rosemarymisdary": {
+			"name": "Rosemary Misdary"
+		},
+		"touissantcampbell": {
+			"name": "Toussaint Campbell"
+		},
+		"spencer-lee": {
+			"name": "Spencer Lee"
+		},
+		"nikithasattirajurao": {
+			"name": "Nikitha Sattiraju Rao"
+		},
+		"vrushanknayak": {
+			"name": "Vrushank Nayak"
+		},
+		"hannahmiller": {
+			"name": "Hannah Miller"
+		},
+		"benfoldy": {
+			"name": "Ben Foldy"
+		},
+		"willarubin": {
+			"name": "Willa Rubin"
+		}
+	}
+}

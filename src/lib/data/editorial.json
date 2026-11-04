@@ -1,0 +1,118 @@
+{
+	"_note": "Hand-written editorial layer on top of the WordPress content. The import scripts never overwrite this file. 'names' renames sections and reporters; 'home' picks the lead and top stories by slug (anything missing falls back to newest-first); 'posts' adds kickers, tickers and short deks keyed by post slug.",
+	"names": {
+		"categories": {
+			"companies": "Company Insights",
+			"stocks-2": "Stocks",
+			"stock-trend": "Stock Trends",
+			"estee-lauder-inc": "Estée Lauder",
+			"alphabet-inc": "Alphabet",
+			"coinbase/crypto-coinbase": "Coinbase",
+			"health-care": "Health Care",
+			"small-businesses": "Small Business",
+			"eli-lilly": "Eli Lilly",
+			"companies/target-companies": "Target",
+			"reits": "REITs",
+			"companies/nvidia-companies": "Nvidia",
+			"pinterest/pinterest-pinterest": "Pinterest",
+			"companies/ford-companies": "Ford",
+			"farmers-market": "Farmers Markets",
+			"astrazeneca": "AstraZeneca",
+			"companies/wayfair-companies": "Wayfair",
+			"companies/apple-companies": "Apple"
+		},
+		"authors": {
+			"chrissywang70": "Chrissy Wang"
+		}
+	},
+	"home": {
+		"lead": "united-airlines-coasts-past-wall-street-estimates-as-jet-fuel-prices-rise",
+		"top": [
+			"coreweave-junk-bonds-financing",
+			"robinhood-pushes-stock-trading-toward-a-24-7-future",
+			"unitedhealth-to-reset-insurance-business-as-medicare-leader-takes-the-helm"
+		]
+	},
+	"posts": {
+		"12006": {
+			"kicker": "Quantum",
+			"tickers": [
+				"IONQ"
+			],
+			"tape": "IonQ partners with Sandia National Labs"
+		},
+		"united-airlines-coasts-past-wall-street-estimates-as-jet-fuel-prices-rise": {
+			"kicker": "Airlines",
+			"tickers": [
+				"UAL",
+				"DAL"
+			],
+			"dek": "As jet fuel costs continue to trend up, United and Delta have strapped in for the long haul, quietly edging out competitors in a downturn. United’s heavy investment in premium offerings for brand loyalists has kept it steady.",
+			"tape": "United beats estimates as jet fuel climbs"
+		},
+		"coreweave-junk-bonds-financing": {
+			"kicker": "AI Infrastructure",
+			"tickers": [
+				"CRWV"
+			],
+			"dek": "More than $5 billion in convertible and junk bonds will fund a billion-dollar data center in Virginia.",
+			"tape": "CoreWeave sells $5B+ in bonds for GPUs"
+		},
+		"robinhood-pushes-stock-trading-toward-a-24-7-future": {
+			"kicker": "Markets",
+			"tickers": [
+				"HOOD"
+			],
+			"dek": "Customers will be able to trade select US stocks and ETFs around the clock, reacting to news whenever it breaks.",
+			"tape": "Robinhood moves toward 24/7 trading"
+		},
+		"unitedhealth-to-reset-insurance-business-as-medicare-leader-takes-the-helm": {
+			"kicker": "Healthcare",
+			"tickers": [
+				"UNH"
+			],
+			"dek": "Robert “Bobby” Hunter announced his appointment as UnitedHealthcare president in a LinkedIn post.",
+			"tape": "UnitedHealth names new insurance chief"
+		},
+		"more-pain-to-come-nike-posts-subpar-revenue-issues-bleak-guidance": {
+			"kicker": "Retail",
+			"tickers": [
+				"NKE"
+			],
+			"dek": "A weak quarter and a disappointing outlook deepen Wall Street’s doubts about the turnaround.",
+			"tape": "Nike issues bleak guidance"
+		},
+		"airbnb-boasts-a-new-ai-forward-search-update": {
+			"kicker": "Travel",
+			"tickers": [
+				"ABNB"
+			],
+			"dek": "An optional AI search bar lets travelers describe what they want in plain language.",
+			"tape": "Airbnb rolls out AI search"
+		},
+		"whats-next-for-mcdonalds-franchisees": {
+			"kicker": "Restaurants",
+			"tickers": [
+				"MCD"
+			],
+			"dek": "About $800,000 per restaurant in upgrades, with the company promising to cover part of the bill.",
+			"tape": "McDonald’s asks franchisees for $800K upgrades"
+		},
+		"lyft-just-settled-a-landmark-worker-classification-lawsuit-is-uber-next": {
+			"kicker": "Gig Economy",
+			"tickers": [
+				"LYFT",
+				"UBER"
+			],
+			"dek": "Lyft agreed to pay $272.5 million. Uber has fought California over the case for six years.",
+			"tape": "Lyft settles for $272.5M"
+		},
+		"bitcoin-miners-pivot-into-ai-landlords": {
+			"kicker": "Crypto",
+			"tickers": [
+				"RIOT"
+			],
+			"tape": "Bitcoin miner turns AI landlord"
+		}
+	}
+}

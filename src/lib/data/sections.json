@@ -1,0 +1,1716 @@
+{
+	"_note": "Which homepage sections each story appears under, keyed by post slug. Assigned by reading every headline and opening paragraph (Nov 2026); edit freely. Codes: companies = Company Insights, stocks-2 = Stocks, earnings = Earnings, previews = Previews, personal-finance = Personal Finance. Stories listed with [] stay under News only.",
+	"posts": {
+		"10449": [
+			"personal-finance"
+		],
+		"12006": [
+			"companies"
+		],
+		"united-airlines-coasts-past-wall-street-estimates-as-jet-fuel-prices-rise": [
+			"companies",
+			"earnings"
+		],
+		"whats-next-for-mcdonalds-franchisees": [
+			"companies"
+		],
+		"robinhood-pushes-stock-trading-toward-a-24-7-future": [
+			"companies",
+			"stocks-2"
+		],
+		"coreweave-junk-bonds-financing": [
+			"companies"
+		],
+		"bitcoin-miners-pivot-into-ai-landlords": [
+			"companies",
+			"stocks-2"
+		],
+		"unitedhealth-to-reset-insurance-business-as-medicare-leader-takes-the-helm": [
+			"companies"
+		],
+		"more-pain-to-come-nike-posts-subpar-revenue-issues-bleak-guidance": [
+			"companies",
+			"earnings",
+			"stocks-2"
+		],
+		"airbnb-boasts-a-new-ai-forward-search-update": [
+			"companies"
+		],
+		"lyft-just-settled-a-landmark-worker-classification-lawsuit-is-uber-next": [
+			"companies"
+		],
+		"fedex-makes-ev-push-as-diesel-prices-soar": [
+			"companies"
+		],
+		"berkshire-hathaway-invests-heavily-in-lennar-barely-in-d-r-horton": [
+			"companies",
+			"stocks-2"
+		],
+		"enterprise-ai-rush-is-creating-a-cybersecurity-monopoly": [
+			"companies"
+		],
+		"nike-dropped-caitlin-clarks-first-signature-shoe-and-its-almost-sold-out": [
+			"companies"
+		],
+		"chipotle-resurrects-its-margarita-drink-in-halloween-themed-limited-run": [
+			"companies"
+		],
+		"ai-has-yet-to-make-money-for-the-music-industry-and-it-may-take-a-long-time": [
+			"stocks-2"
+		],
+		"ge-vernova-secures-first-u-s-permit-for-small-nuclear-reactor-in-tennessee": [
+			"companies"
+		],
+		"tractor-sales-are-sinking-farm-equipment-stocks-arent": [
+			"stocks-2"
+		],
+		"target-is-outpacing-their-retail-competitors": [
+			"companies"
+		],
+		"tysons-pork-bill-grows-as-beef-losses-bite": [
+			"companies"
+		],
+		"yum-brands-sheds-pizza-hut-to-prioritize-taco-bell-kfc": [
+			"companies"
+		],
+		"d-r-horton-boosts-its-stock-buybacks": [
+			"companies",
+			"stocks-2"
+		],
+		"the-ai-chip-market-is-booming-but-can-it-keep-up-with-investor-spending": [
+			"stocks-2"
+		],
+		"the-new-york-times-goes-all-in-on-video": [
+			"companies"
+		],
+		"lawsuit-alleges-costco-misled-members-about-ethically-sourced-products": [
+			"companies"
+		],
+		"has-williams-sonoma-stock-hit-its-ceiling": [
+			"stocks-2"
+		],
+		"verizon-att-tmobile-stock-2026": [
+			"companies",
+			"stocks-2"
+		],
+		"vertivs-ai-fueled-rally-puts-data-center-infrastructure-spending-to-the-test": [
+			"stocks-2"
+		],
+		"wall-street-is-selling-nuclears-premium": [
+			"stocks-2"
+		],
+		"ai-hype-seeping-into-real-estate-data-center-reits-equinix-and-dlr": [
+			"stocks-2"
+		],
+		"k-shaped-economy-keeps-luxury-homebuilder-stocks-steady-despite-high-rate-environment": [
+			"stocks-2"
+		],
+		"crown-castles-plunge-shows-the-future-of-u-s-cell-towers": [
+			"companies",
+			"stocks-2"
+		],
+		"nike-stock-tumbles-well-below-its-2021-peak-as-investors-wait-for-proof-of-a-comeback": [
+			"companies",
+			"stocks-2"
+		],
+		"fixing-the-swoosh-luxury-heir-completes-nikes-new-turnaround-trio": [
+			"companies",
+			"stocks-2"
+		],
+		"some-fuel-cell-companies-are-capitalizing-on-the-data-center-boom-others-are-falling-behind": [
+			"stocks-2"
+		],
+		"fast-food-stocks-take-a-hit-as-consumers-and-investors-turn-elsewhere": [
+			"stocks-2"
+		],
+		"consulting-stocks-claw-back-some-ground-as-ai-fears-settle": [
+			"stocks-2"
+		],
+		"cyber-is-the-new-blue-chip-security-stocks-left-the-rest-of-software-behind": [
+			"stocks-2"
+		],
+		"cable-stocks-tumble-as-new-tech-edges-out-market-position": [
+			"earnings",
+			"stocks-2"
+		],
+		"trump-told-companies-to-move-manufacturing-back-to-the-states-but-mass-reshoring-is-still-a-distant-reality": [],
+		"trumps-policies-dampened-tourism-the-slowdown-now-hurts-american-businesses": [],
+		"americas-wealth-is-growing-the-number-of-financial-advisors-is-not": [
+			"personal-finance"
+		],
+		"albemarle-corporation-finally-adapted-to-the-lithium-bust-now-a-boom-is-around-the-corner": [
+			"companies"
+		],
+		"stock-market-disagrees-with-trump-on-renewables": [
+			"stocks-2"
+		],
+		"builder-mortgage-deals-put-southern-buyers-at-risk": [
+			"personal-finance"
+		],
+		"streaming-won-audiences-now-theatres-have-to-catch-up": [
+			"companies"
+		],
+		"trump-tariffs-loom-over-the-holiday-season": [],
+		"electronic-arts-sale-raises-fears-for-biowares-future": [
+			"companies"
+		],
+		"we-dont-yet-know-if-ai-is-a-bubble-but-ordinary-americans-can-protect-themselves-just-in-case": [
+			"personal-finance"
+		],
+		"3d-virtual-tours-let-homebuyers-bid-without-visiting-but-are-they-worth-the-risk": [
+			"personal-finance"
+		],
+		"on-airbnb-book-a-place-to-stay-or-a-makeover-from-sabrina-carpenters-glam-squad": [
+			"companies"
+		],
+		"darden-expected-to-post-solid-same-store-sales-amid-economic-pressure": [
+			"previews",
+			"earnings"
+		],
+		"come-christmas-chinese-made-drones-face-a-ban-and-american-rivals-stand-to-gain": [
+			"companies"
+		],
+		"as-ai-cools-brad-jacobs-qxo-heats-up-with-a-back-to-basics-roll-up-strategy": [
+			"companies"
+		],
+		"crypto-crosses-the-generational-divide": [
+			"personal-finance"
+		],
+		"consumers-say-theyre-stretched-thin-heres-why-bargain-retailers-are-booming-anyway": [
+			"companies"
+		],
+		"new-york-times-profit-jumps-as-subscriber-strategies-pay-off": [
+			"companies",
+			"earnings"
+		],
+		"estee-lauder-doesnt-want-to-be-known-as-your-grandmas-makeup-brand-anymore": [
+			"companies"
+		],
+		"best-buy-sales-expected-to-rise-to-3-year-high": [
+			"previews",
+			"earnings"
+		],
+		"best-buy-invests-in-online-business-in-attempt-to-compete-with-amazon": [
+			"companies"
+		],
+		"northrop-grumman-profit-jumps-amid-defense-spending-spree": [
+			"companies",
+			"earnings"
+		],
+		"ea-earnings-decline-as-deal-to-go-private-nears": [
+			"companies",
+			"earnings"
+		],
+		"axon-stumbles-as-tariffs-hit-margins": [
+			"companies",
+			"earnings",
+			"stocks-2"
+		],
+		"paramount-promises-more-cost-cuts-and-content-in-first-post-merger-earnings": [
+			"companies",
+			"earnings"
+		],
+		"circle-quarter-three-earnings-revenue-streams": [
+			"companies",
+			"earnings"
+		],
+		"thermo-fisher-edges-back-toward-normalcy-amid-tariff-budget-challenges": [
+			"companies",
+			"earnings"
+		],
+		"estee-lauder-returns-to-sales-growth-amid-turnaround": [
+			"companies",
+			"earnings"
+		],
+		"albemarle-optimistic-as-it-rides-out-the-lithium-bust": [
+			"companies",
+			"earnings"
+		],
+		"nextera-plots-iowa-nuclear-comeback-amid-regulatory-friction-ai-demand-doubts": [
+			"companies"
+		],
+		"alex-karp-and-the-philosophers-software-company-an-elon-musk-playbook-recycled": [
+			"companies",
+			"stocks-2"
+		],
+		"affirm-sales-rise-as-more-shoppers-use-buy-now-pay-later": [
+			"companies",
+			"earnings"
+		],
+		"affirms-biggest-competitor-isnt-other-bnpl-firms-its-your-credit-card": [
+			"companies"
+		],
+		"roblox-wants-to-grow-up-can-it-grow-its-bottom-line-too": [
+			"companies"
+		],
+		"paramount-hopes-live-sports-will-be-the-home-run-it-needs": [
+			"companies"
+		],
+		"coinbases-global-play-how-mergers-and-acquisitions-are-powering-its-next-growth-wave": [
+			"companies"
+		],
+		"federal-research-cuts-could-reverberate-through-thermo-fisher-scientific": [
+			"companies"
+		],
+		"palantir-stacks-one-record-breaking-quarter-on-top-of-another": [
+			"earnings",
+			"stocks-2"
+		],
+		"circle-sets-itself-up-courting-traditional-finance": [
+			"companies"
+		],
+		"in-its-third-quarter-earnings-robloxs-continues-to-grow-its-user-base-and-its-losses": [
+			"companies",
+			"earnings"
+		],
+		"darden-focuses-on-affordability-as-consumers-pinch-pennies": [
+			"companies"
+		],
+		"axon-trades-tasers-for-tech-in-software-and-ai-push": [
+			"companies"
+		],
+		"coinbase-q3-earnings-beat-estimates-benefits-from-higher-trading-volume-and-cryptocurrency-prices": [
+			"companies",
+			"earnings"
+		],
+		"nextera-profits-surge-ahead-of-nuclear-restart-power-rate-adjustment": [
+			"companies",
+			"earnings"
+		],
+		"united-airlines-earnings-beat-estimates-thanks-to-premium-travelers": [
+			"companies",
+			"earnings"
+		],
+		"wall-street-profits-on-track-to-top-60-billion-this-year-comptroller-says": [],
+		"united-airlines-cruises-past-wall-street-estimates-betting-on-first-class-clientele": [
+			"companies",
+			"earnings"
+		],
+		"environment-almost-perfect-for-consumers-wells-fargo-ceo": [
+			"companies",
+			"earnings"
+		],
+		"hinge-enters-mexico-raising-the-stakes-for-match-group-in-latin-america": [
+			"companies"
+		],
+		"palantir-secures-largest-deal-in-company-history-with-foreign-government": [
+			"companies"
+		],
+		"if-the-federal-government-shuts-down-so-does-defense": [
+			"stocks-2"
+		],
+		"in-store-shopping-now-eligible-for-buy-now-pay-later-through-apple-pay": [
+			"companies",
+			"personal-finance"
+		],
+		"can-roblox-become-the-next-social-media-app": [
+			"companies"
+		],
+		"estee-lauder-completes-hiring-of-new-executive-team-as-part-of-its-turnaround-strategy": [
+			"companies"
+		],
+		"paramount-looks-to-buy-warner-bros": [
+			"companies"
+		],
+		"ea-sports-fc-26-launches-amid-takeover-talks": [
+			"companies"
+		],
+		"best-buy-partners-with-uber-for-same-day-delivery": [
+			"companies"
+		],
+		"the-new-york-times-bets-on-family-and-friends-commitment-for-growth": [
+			"companies"
+		],
+		"argentina-stablecoins-up-amid-election-fears": [
+			"personal-finance"
+		],
+		"doe-stake-in-lithium-americas-signals-trump-support-for-onshore-lithium-mining": [
+			"companies"
+		],
+		"axon-to-buy-emergency-dispatch-startup-prepared": [
+			"companies"
+		],
+		"trumps-unpredictable-pharma-policies-could-pinch-thermo-fishers-bottom-line": [
+			"companies"
+		],
+		"as-beef-lags-investors-are-betting-on-smithfield-pork": [
+			"stocks-2"
+		],
+		"coinbase-and-cloudflare-launch-x402-foundation-to-develop-ai-payment-ecosystem": [
+			"companies"
+		],
+		"olive-garden-tests-new-lower-portion-lower-price-menu": [
+			"companies"
+		],
+		"nextera-energy-clears-antitrust-hurdle-over-new-england-grid": [
+			"companies"
+		],
+		"ge-vernova-ceo-confident-in-wind-power-despite-political-headwinds": [
+			"companies"
+		],
+		"copper-mining-equities-are-rebounding-despite-tariff-chaos-driven-by-global-demand": [
+			"stocks-2"
+		],
+		"apparel-retail-industry-rises-despite-tariffs": [
+			"stocks-2"
+		],
+		"yoga-pants-are-out-essentials-are-in-lululemon-downgraded-amid-consumers-spending-shift": [
+			"stocks-2"
+		],
+		"wall-street-continues-to-shrug-off-headwinds-says-beer-stocks-will-prove-resilient": [
+			"stocks-2"
+		],
+		"investors-favor-affordable-luxury-stocks-over-michael-kors-like-ralph-lauren-coach": [
+			"stocks-2"
+		],
+		"homebuilders-bet-federal-rate-cuts-will-hammer-down-mortgage-rates": [
+			"stocks-2"
+		],
+		"renewables-hold-their-own-under-trump": [
+			"stocks-2"
+		],
+		"beauty-sectors-bad-days-may-be-over": [
+			"stocks-2"
+		],
+		"as-home-sales-struggle-homebuilder-stocks-surge": [
+			"stocks-2"
+		],
+		"kratos-and-planet-labs-soar-on-ai-hype-but-aerospace-and-defense-giants-loom": [
+			"stocks-2"
+		],
+		"memestock-traders-find-an-open-door": [
+			"stocks-2"
+		],
+		"as-pandemic-boom-fades-modernas-market-momentum-reverses": [
+			"stocks-2"
+		],
+		"hotel-reits-rally-on-rate-cut-hopes-despite-weak-travel-market": [
+			"stocks-2"
+		],
+		"viral-denim-campaigns-lifted-american-eagle-and-gap-shares-will-the-rallies-last": [
+			"stocks-2"
+		],
+		"with-rising-infertility-rates-how-important-is-ivf-coverage-for-the-average-american": [
+			"personal-finance"
+		],
+		"cryptos-comeback-what-a-trump-presidency-could-mean-for-the-industry": [],
+		"is-the-trump-trade-for-you-how-to-approach-the-market-rally-under-the-new-administration": [
+			"personal-finance",
+			"stocks-2"
+		],
+		"siriusxm-bets-on-flashy-podcast-deals-and-lower-prices-to-attract-younger-listeners": [
+			"companies"
+		],
+		"wedding-statistics-and-online-pressures-are-leading-couples-to-overspend-heres-how-to-save": [
+			"personal-finance"
+		],
+		"crypto-is-buzzing-its-scammers-are-too": [
+			"personal-finance"
+		],
+		"trump-tariffs-signal-complicated-future-for-domestic-apparel-industry": [],
+		"atts-fiber-network-is-winning-but-competition-is-catching-up-does-it-need-to-keep-expanding": [
+			"companies"
+		],
+		"worried-about-future-restrictions-women-stock-up-on-emergency-contraception-ahead-of-trump-presidency": [],
+		"hispanic-homeownership-rates-projected-to-keep-growing-in-the-u-s": [
+			"personal-finance"
+		],
+		"mom-pop-retailers-thrive-in-rural-areas-while-folding-elsewhere": [],
+		"trumps-victory-is-changing-home-buyers-plans": [
+			"personal-finance"
+		],
+		"eli-lilly-believes-its-drugs-could-treat-ailments-beyond-obesity-accessibility-challenges-and-a-trump-admin-stand-in-the-way": [
+			"companies"
+		],
+		"snap-struggles-to-grow-in-its-most-important-market": [
+			"companies",
+			"earnings"
+		],
+		"ea-gets-a-boost-from-american-football-franchises": [
+			"companies",
+			"earnings"
+		],
+		"leggings-built-lululemon-will-they-bring-it-down": [
+			"companies"
+		],
+		"progressive-gains-record-number-of-policies-doubles-profits-in-third-quarter": [
+			"companies",
+			"earnings"
+		],
+		"siriusxm-says-weaker-ad-revenue-is-to-blame-for-bleaker-outlook": [
+			"companies",
+			"earnings"
+		],
+		"ulta-earnings-outlook-remains-cool-amid-increased-competition-industry-normalization": [
+			"previews",
+			"earnings"
+		],
+		"robinhood-releases-new-features-to-attract-sophisticated-investors-and-increase-market-share": [
+			"companies"
+		],
+		"snap-eyes-older-audiences-with-simple-snapchat-as-pressures-mount": [
+			"companies"
+		],
+		"lululemon-faces-low-expectations-for-q3-earnings": [
+			"previews",
+			"earnings"
+		],
+		"peloton-tries-to-pedal-its-way-back-to-the-top-and-appoints-new-ceo": [
+			"companies"
+		],
+		"ulta-aims-to-expand-its-definition-of-beauty": [
+			"companies"
+		],
+		"robinhoods-earnings-misses-the-mark-but-not-for-the-reason-you-think-high-incentives-numbers-offset-robinhoods-revenue-for-3q": [
+			"companies",
+			"earnings",
+			"stocks-2"
+		],
+		"atts-stock-gets-a-boost-after-the-positive-q3-earnings-report-outlook": [
+			"earnings",
+			"stocks-2"
+		],
+		"eli-lilly-stock-falls-13-after-disappointing-sales-for-mounjaro-and-zepbound-in-the-third-quarter": [
+			"earnings",
+			"stocks-2"
+		],
+		"eli-lilly-races-to-fend-off-competitors-in-weight-loss-drug-market": [
+			"companies"
+		],
+		"how-progressives-quick-response-to-record-high-auto-insurance-inflation-made-it-an-industry-titan": [
+			"companies"
+		],
+		"hoka-built-the-honda-civic-of-running-shoes-not-the-ferrari-its-working-for-deckers": [
+			"companies"
+		],
+		"peloton-raises-their-profit-guidance-for-the-fiscal-year-2025-and-appoints-new-ceo": [
+			"companies",
+			"earnings"
+		],
+		"eas-bet-on-ai-visionary-or-premature": [
+			"companies"
+		],
+		"in-battle-of-the-big-box-target-bets-on-star-power": [
+			"companies"
+		],
+		"hoka-is-flying-off-the-shelves-driving-deckerss-stock": [
+			"companies",
+			"stocks-2"
+		],
+		"boeing-union-to-vote-on-proposal-that-could-end-crippling-strike": [
+			"companies"
+		],
+		"eli-lillys-new-alzheimers-drug-wins-approval-in-japan": [
+			"companies"
+		],
+		"att-preps-for-hurricane-season-outages": [
+			"companies"
+		],
+		"pgr-soared-59-this-year-as-insurance-sector-continues-to-outpace-sp-500": [
+			"stocks-2"
+		],
+		"robinhood-has-higher-fees-for-options-trading-study-finds": [
+			"companies",
+			"personal-finance"
+		],
+		"retail-investors-still-show-an-appetite-for-gme-despite-volatility-meme-stocks-are-ranked-among-top-top-traded-stocks-on-robinhood": [
+			"stocks-2"
+		],
+		"progressive-stock-falls-as-hurricane-helene-hammers-southeast-u-s": [
+			"stocks-2"
+		],
+		"snaps-gamble-on-augmented-reality-gear": [
+			"companies"
+		],
+		"peloton-rises-equipment-prices-amid-declining-sales": [
+			"companies"
+		],
+		"nikes-stock-is-trending-up-after-company-ousts-its-ceo": [
+			"stocks-2"
+		],
+		"ulta-kicks-off-wicked-film-collaboration-ahead-of-crucial-holiday-season": [
+			"companies"
+		],
+		"electronic-arts-stock-rises-after-fc-game-release": [
+			"stocks-2"
+		],
+		"ethical-eggs-crack-the-market-and-surpass-competitors": [
+			"stocks-2"
+		],
+		"rivian-ceo-emphasizes-consumer-choice-amid-slowing-ev-demand": [
+			"companies"
+		],
+		"nikes-recent-mistakes-bust-the-race-for-the-running-shoe-market-wide-open": [
+			"stocks-2"
+		],
+		"radio-companies-are-take-big-risks-to-keep-up-with-spotify-investors-say-eventually-they-could-pay-off": [
+			"stocks-2"
+		],
+		"investors-bet-on-multi-family-reits-amid-declining-rental-growth": [
+			"stocks-2"
+		],
+		"off-price-retail-stocks-soar-as-consumers-pull-back-on-spending": [
+			"stocks-2"
+		],
+		"a-surge-in-energy-shares-reminds-investors-they-arent-losing-power-any-time-soon": [
+			"stocks-2"
+		],
+		"underperforming-video-game-stocks-could-see-ai-driven-upturn": [
+			"stocks-2"
+		],
+		"small-biotech-poised-for-a-cure-after-years-of-plunging-stock": [
+			"stocks-2"
+		],
+		"sportswear-stocks-wane-as-old-school-retailers-pick-up": [
+			"stocks-2"
+		],
+		"target-hires-pepsico-executive-jim-lee-as-new-cfo": [
+			"companies"
+		],
+		"in-retail-paradox-the-fortunes-of-big-box-and-luxury-stores-diverge-from-their-clientele": [
+			"stocks-2"
+		],
+		"how-social-media-influencers-conquered-the-financial-education-industry": [
+			"personal-finance"
+		],
+		"three-ways-to-protect-yourself-from-online-scammers": [
+			"personal-finance"
+		],
+		"taylor-swifts-football-interest-shines-a-light-on-kc-and-the-nfl": [],
+		"rivian-banks-on-its-showrooms-to-build-its-brand": [
+			"companies"
+		],
+		"for-many-millennials-homeownership-is-still-out-of-reach": [
+			"personal-finance"
+		],
+		"dating-apps-are-trying-to-foster-more-meaningful-connections-between-people": [
+			"companies"
+		],
+		"womens-sports-score-lucrative-tv-deals-amidst-battle-for-rights-between-cable-and-streaming-companies": [],
+		"farm-equipment-makers-tighten-belts-after-pandemic-boom-years": [],
+		"consumer-boycotts-of-starbucks-and-mcdonalds-show-greater-impact-outside-the-u-s": [
+			"companies"
+		],
+		"etsy-is-spending-big-to-bring-buyers-back-after-post-pandemic-slump": [
+			"companies"
+		],
+		"healthcare-consolidations-induce-regulatory-scrutiny-amid-rising-costs": [],
+		"apps-make-splitting-the-check-a-breeze-keeping-the-holiday-spirit-alive": [
+			"personal-finance"
+		],
+		"navigating-the-potholes-of-rising-auto-insurance-rates": [
+			"personal-finance"
+		],
+		"online-shopping-dominates-holiday-spending-consumers-expect-to-feel-the-pinch-later": [
+			"personal-finance"
+		],
+		"nvidias-dgx-cloud-a-niche-product-adding-to-its-riches": [
+			"companies"
+		],
+		"draftkings-looks-like-it-will-be-able-to-continue-to-dominate-the-sports-betting-industry-but-it-will-come-with-a-cost": [
+			"companies"
+		],
+		"netflix-turns-to-growing-its-ad-tier-as-profits-are-harder-to-come-by": [
+			"companies"
+		],
+		"activist-shareholders-put-in-fresh-bid-for-board-representation-as-disney-continues-to-stem-losses": [
+			"companies"
+		],
+		"jamie-dimon-is-willing-to-leave-china-if-he-has-to": [
+			"companies"
+		],
+		"disney-blames-recent-box-office-struggles-on-streaming": [
+			"companies"
+		],
+		"aging-america-nudging-unitedhealth-to-invest-in-home-care": [
+			"companies"
+		],
+		"elon-musk-says-advertisers-can-go-f-themselves-as-x-continues-to-bleed-away-funds": [
+			"companies"
+		],
+		"mattel-wants-and-needs-hollywood-to-save-its-business": [
+			"companies"
+		],
+		"hed-anti-union-musk-and-tesla-are-uaws-next-targets": [
+			"companies"
+		],
+		"why-livents-25-year-old-production-method-may-be-the-future-of-lithium": [
+			"companies"
+		],
+		"pfizer-is-looking-for-its-next-blockbusters-after-covid-could-one-of-them-be-treating-cancer": [
+			"companies"
+		],
+		"adobe-embraces-generative-ai-era-prioritizing-user-growth": [
+			"companies"
+		],
+		"mobile-clinics-dollar-general": [
+			"companies"
+		],
+		"de-risking-saved-the-day-for-insurers-but-some-are-concerned-about-tomorrow": [
+			"companies"
+		],
+		"chevrons-bet-on-venezuela-faces-political-hurdle": [
+			"companies"
+		],
+		"out-with-the-new-in-with-the-old-dollar-general-investors-look-to-vasos-to-reverse-slide": [
+			"previews",
+			"earnings"
+		],
+		"nvidia-earnings-offer-a-peek-into-the-ai-markets-future": [
+			"previews",
+			"earnings"
+		],
+		"ai-looks-good-on-adobe-as-it-nears-another-revenue-record": [
+			"previews",
+			"earnings"
+		],
+		"warner-bros-discoverys-next-act-turning-max-into-a-one-stop-streaming-shop": [
+			"companies"
+		],
+		"nvidia-rides-high-on-a-i-surge-boosting-earnings-and-investor-buzz": [
+			"previews",
+			"earnings"
+		],
+		"nvidias-next-big-move-better-ai-chips-for-autonomous-driving": [
+			"companies"
+		],
+		"coming-soon-to-a-company-near-you-rivians-electric-delivery-vans": [
+			"companies"
+		],
+		"hollywood-strikes-cost-warner-bros-discovery-subscriber-growth-in-third-quarter": [
+			"companies",
+			"earnings"
+		],
+		"draftkings-beats-wall-street-expectations-in-the-third-quarter": [
+			"companies",
+			"earnings"
+		],
+		"coinbase-defies-expectations-on-q3-revenue-but-crypto-winter-still-weighing-it-down": [
+			"companies",
+			"earnings"
+		],
+		"progressive-insurance-outmaneuvers-competitors-in-the-third-quarter": [
+			"companies",
+			"earnings"
+		],
+		"wingstop-soars-past-wall-street-expectations-in-the-third-quarter": [
+			"companies",
+			"earnings"
+		],
+		"pfizer-sales-down-as-demand-for-covid-products-fall": [
+			"companies",
+			"earnings"
+		],
+		"mattel-maintains-bleak-forecast-as-declining-toy-business-overshadows-barbie-summer": [
+			"companies",
+			"earnings"
+		],
+		"livent-cuts-outlook-as-delays-hit-argentina-lithium-projects": [
+			"companies"
+		],
+		"wingstops-profits-fly-to-new-heights": [
+			"companies",
+			"earnings"
+		],
+		"chevron-reports-lower-than-expected-third-quarter-earnings": [
+			"companies",
+			"earnings"
+		],
+		"unitedhealths-earnings-driven-by-lower-medical-cost-as-company-raises-guidance": [
+			"companies",
+			"earnings"
+		],
+		"teslas-quarterly-sales-slow-amid-production-upgrades-and-rising-competition": [
+			"companies",
+			"earnings"
+		],
+		"netflix-sets-sights-on-expanding-ad-tier-packages-as-password-sharing-crackdown-spurs-growth": [
+			"companies",
+			"earnings"
+		],
+		"intel-banks-on-ripe-geopolitical-conditions-for-long-term-success": [
+			"companies"
+		],
+		"affordable-cosmetics-brands-attract-consumers-boosting-beauty-stock-shares": [
+			"stocks-2"
+		],
+		"nvidia-partner-commits-to-training-thousands-of-employees-in-ai-tech": [
+			"companies"
+		],
+		"etsy-empowers-small-business-owners-as-the-holiday-season-approaches": [
+			"companies"
+		],
+		"adobe-releases-photoshop-on-the-web-with-an-ai-upgrade-and-a-paywall": [
+			"companies"
+		],
+		"unitedhealth-buoyed-by-an-aging-america": [
+			"companies",
+			"stocks-2"
+		],
+		"dollar-general-opens-first-store-in-montana-with-more-on-the-way": [
+			"companies"
+		],
+		"netflix-becomes-latest-streaming-service-to-raise-its-prices": [
+			"companies"
+		],
+		"draftkings-launches-mobile-app-and-locations-in-kentucky": [
+			"companies"
+		],
+		"progressive-pulls-back-in-florida-overall-outlook-still-unclear": [
+			"companies"
+		],
+		"policy-incoherence-hindering-production-to-ease-high-oil-prices-chevron-ceo-says": [
+			"companies"
+		],
+		"sec-pressure-complicates-coinbases-quest-to-grow-globally": [
+			"companies"
+		],
+		"pfizer-seeks-partnerships-to-broaden-and-diversify-its-portfolio": [
+			"companies"
+		],
+		"nvidia-bets-big-on-india-with-ai-partnerships": [
+			"companies"
+		],
+		"warner-bros-discovery-to-expand-u-k-studio-following-netflixs-playbook": [
+			"companies"
+		],
+		"barbie-producer-robbie-brenner-promoted-to-president-of-mattel-films": [
+			"companies"
+		],
+		"livent-allkem-merger-advances-in-bid-to-catch-lithium-majors": [
+			"companies"
+		],
+		"rivian-on-track-to-meet-2023-production-goals": [
+			"companies"
+		],
+		"rivian-ceo-r1t-faces-no-competition-from-teslas-cybertruck": [
+			"companies"
+		],
+		"bullish-prospects-for-lithium-miners-despite-a-year-of-steep-declines": [
+			"stocks-2"
+		],
+		"airline-stocks-plummet-as-government-shutdown-fears-and-soaring-fuel-costs-create-turbulence": [
+			"stocks-2"
+		],
+		"sport-betting-stocks-are-coveted-as-sport-betting-expands": [
+			"stocks-2"
+		],
+		"e-commerce-retailers-underperforming-amid-market-challenges": [
+			"stocks-2"
+		],
+		"moderna-pfizer-stocks-down-even-amid-rising-covid-19-cases-and-updated-boosters-launch": [
+			"stocks-2"
+		],
+		"inflation-theft-puts-discount-retail-at-big-discount": [
+			"stocks-2"
+		],
+		"high-lithium-prices-lower-the-stock-valuation-of-lithium-producers": [
+			"stocks-2"
+		],
+		"crypto-mining-stocks-hamstrung-by-inaction-on-bitcoin-etfs-but-shrug-off-higher-energy-costs": [
+			"stocks-2"
+		],
+		"new-media-companies-see-stock-prices-rise-as-dual-hollywood-strikes-drag-on": [
+			"stocks-2"
+		],
+		"airlines-stocks-lose-altitude-is-there-smooth-air-ahead-for-investors": [
+			"stocks-2"
+		],
+		"investors-bet-on-manhattan-despite-uncertainty": [
+			"stocks-2"
+		],
+		"what-comes-next-for-plummeting-pandemic-darling-stocks-pfizer-and-moderna": [
+			"stocks-2"
+		],
+		"wall-street-plays-long-game-in-the-health-insurance-market": [
+			"stocks-2"
+		],
+		"streaming-stocks-suffer-as-hollywood-strikes-drag-on-but-netflix-remains-best-bet": [
+			"stocks-2"
+		],
+		"the-era-of-junk-fees-might-be-over-but-businesses-might-still-come-out-on-top": [
+			"personal-finance"
+		],
+		"gen-zers-wish-for-financial-stability-this-holiday-season": [
+			"personal-finance"
+		],
+		"airbnb-wants-fees-to-be-more-transparent-to-help-travelers-but-some-are-already-moving-on": [
+			"companies"
+		],
+		"axsome-therapeutics-launches-antidepressant-in-crowded-market-route-to-success-shaded-by-lack-of-communication": [
+			"companies"
+		],
+		"rent-the-runway-aspired-to-be-the-amazon-prime-of-rental-that-dream-never-made-any-sense": [
+			"companies"
+		],
+		"metas-social-media-business-is-hurting-can-reels-fix-falling-revenue": [
+			"companies"
+		],
+		"ahead-of-kelloggs-split-the-outlook-for-its-cereal-business-doesnt-look-gr-r-reat": [
+			"companies"
+		],
+		"dr-cvs-is-coming-but-the-company-will-face-crowded-competition-to-build-it-2": [
+			"companies"
+		],
+		"meta-bids-on-virtual-reality-for-daily-life-customers-dont-think-so": [
+			"companies"
+		],
+		"new-to-the-ad-game-netflix-banks-on-international-edge-to-help-it-cash-in": [
+			"companies"
+		],
+		"dr-cvs-is-coming-but-the-company-will-face-crowded-competition-to-build-it": [
+			"companies"
+		],
+		"ford-has-invested-big-on-an-electric-future-but-that-future-may-be-very-far-off": [
+			"companies"
+		],
+		"occidental-petroleum-is-betting-on-carbon-capture-the-strategy-might-be-full-of-hot-air": [
+			"companies"
+		],
+		"airbnb-sees-booming-third-quarter-as-potential-recession-looms": [
+			"companies",
+			"earnings"
+		],
+		"intel-wants-to-use-tax-dollars-to-catch-up-with-its-competitors-and-restore-domestic-chip-making": [
+			"companies"
+		],
+		"fox-corp-adds-more-horror-titles-to-its-streaming-service-tubi-hoping-fake-blood-will-solve-real-problems": [
+			"companies"
+		],
+		"amex-ceo-says-company-will-stop-ads-on-twitter-if-values-diverge": [
+			"companies"
+		],
+		"despite-a-worrying-economy-american-express-will-double-down-on-its-marketing-spend": [
+			"companies"
+		],
+		"cvs-expected-to-post-strong-earnings-despite-new-threats": [
+			"previews",
+			"earnings"
+		],
+		"dependence-on-subscriber-growth-leaves-rent-the-runway-on-narrow-path-to-profits": [
+			"previews",
+			"earnings"
+		],
+		"with-two-drugs-on-the-market-axsome-therapeutics-inc-s-focus-on-making-them-revenue-generators": [
+			"companies"
+		],
+		"kellogg-expected-to-deliver-strong-quarter-as-higher-prices-set-to-offset-sluggish-sales-volume": [
+			"previews",
+			"earnings"
+		],
+		"occidental-petroleum-has-been-chipping-away-at-its-debt-can-the-good-times-continue": [
+			"companies",
+			"previews"
+		],
+		"crypto-exchange-coinbases-earnings-could-continue-falling-amid-trading-decline": [
+			"previews",
+			"earnings"
+		],
+		"ford-moves-ahead-with-aggressive-electric-vehicle-goals-as-it-exits-the-autonomous-vehicle-business": [
+			"companies"
+		],
+		"meta-makes-10-billion-bet-on-aiservers-as-ad-business-struggles": [
+			"companies",
+			"earnings"
+		],
+		"fox-corp-revenue-likely-boosted-by-midterm-elections-advertising-packed-fall-sports-season": [
+			"previews",
+			"earnings"
+		],
+		"intel-moves-to-cut-costs-and-prioritize-efficiency-amid-slump-in-semiconductor-demand": [
+			"companies"
+		],
+		"earnings-for-mcdonalds-slide-but-investors-are-still-lovin-it": [
+			"companies",
+			"earnings"
+		],
+		"metas-costs-skyrocket-as-zuckerberg-pushes-investments-in-metaverse-ai": [
+			"companies",
+			"earnings"
+		],
+		"mcdonalds-growth-remained-strong-in-third-quarter-as-inflation-ate-into-profits": [
+			"companies",
+			"earnings"
+		],
+		"disney-is-building-a-personalized-metaverse-experience-not-for-people-that-look-like-you-but-for-you": [
+			"companies"
+		],
+		"intel-ceo-patrick-gelsinger-views-simmering-geopolitical-tensions-over-chips-as-inevitable": [
+			"companies"
+		],
+		"netflix-to-focus-on-profits-amid-slowing-subscriber-growth": [
+			"companies"
+		],
+		"wells-fargos-2-billion-hit-points-to-long-road-ahead-in-legal-saga": [
+			"companies",
+			"earnings"
+		],
+		"coinbases-stock-drops-as-proprietary-trading-experiment-exposes-potential-conflicts-of-interest": [
+			"companies",
+			"stocks-2"
+		],
+		"ford-doubles-down-on-electric-future": [
+			"companies"
+		],
+		"netflix-could-recapture-up-to-20-of-lapsed-subscribers-with-new-ad-supported-tier": [
+			"companies"
+		],
+		"budget-cuts-vs-bracing-for-impact-zuckerberg-announces-hiring-freezes-for-meta": [
+			"companies"
+		],
+		"meta-plans-hiring-freeze-as-it-seeks-to-cut-staffing-costs": [
+			"companies"
+		],
+		"warren-buffett-bought-occidental-stock-again-but-his-plans-remain-unclear": [
+			"companies",
+			"stocks-2"
+		],
+		"breakfast-is-served-kellogg-completes-north-american-cereal-company-c-suite": [
+			"companies"
+		],
+		"airbnbs-brian-chesky-hints-at-fintech-and-new-host-features": [
+			"companies"
+		],
+		"rent-the-runway-plans-heavy-job-cuts-as-subscribers-drop-off": [
+			"companies"
+		],
+		"cvs-considers-cano-health-bid-in-its-buy-up-of-primary-care-services": [
+			"companies"
+		],
+		"wells-fargo-to-pay-145-million-to-settle-retirement-plan-investigation": [
+			"companies"
+		],
+		"fox-entertainment-debuts-global-sales-arm-to-sell-shows-abroad": [
+			"companies"
+		],
+		"axsome-therapeutics-plans-resubmission-of-new-drug-application-to-fda-while-investors-focus-on-rest-of-portfolio": [
+			"companies"
+		],
+		"intel-takes-on-nvidia-and-amd-with-graphics-card-for-gaming-pcs": [
+			"companies"
+		],
+		"despite-a-booming-summer-travel-stocks-remain-weak-in-a-shaky-economy": [
+			"stocks-2"
+		],
+		"crypto-mining-stocks-continue-to-fall-amid-rising-inflation-major-industry-changes": [
+			"stocks-2"
+		],
+		"in-reversal-wall-street-eyes-bank-stocks-as-recession-resistant-investments": [
+			"stocks-2"
+		],
+		"immune-to-market-slump-these-four-major-healthcare-stocks-are-on-an-expansion-kick": [
+			"stocks-2"
+		],
+		"the-inflation-reduction-act-promises-to-boost-solar-with-further-gains-in-sight": [
+			"stocks-2"
+		],
+		"discount-retailers-weather-a-volatile-market-but-interest-rate-hikes-threaten-broader-economy": [
+			"stocks-2"
+		],
+		"us-social-media-companies-are-losing-followers": [
+			"stocks-2"
+		],
+		"amid-rate-hike-uncertainties-health-insurer-stocks-are-poised-to-gain": [
+			"stocks-2"
+		],
+		"chips-act-falls-flat-on-investors-among-inventory-and-revenue-concerns-for-chipmakers": [
+			"stocks-2"
+		],
+		"oil-prices-are-dropping-energy-investors-are-hanging-on-anyway": [
+			"stocks-2"
+		],
+		"insulin-price-caps-and-tough-litigation-wont-bury-big-pharma": [
+			"stocks-2"
+		],
+		"the-video-game-industry-might-have-pwned-the-pandemic-but-can-it-make-a-rebound-investors-think-so": [
+			"stocks-2"
+		],
+		"social-media-stocks-heading-for-long-winter-as-ad-revenue-dries-up": [
+			"stocks-2"
+		],
+		"stocks-rise-as-investors-buck-hawkish-comments-from-central-bank-officials": [
+			"stocks-2"
+		],
+		"stocks-rise-in-volatile-session-as-investors-mull-rate-outlook": [
+			"stocks-2"
+		],
+		"pinterest-hopes-late-investment-in-video-content-creation-will-resuscitate-its-user-base": [
+			"companies"
+		],
+		"starbucks-hopes-for-a-big-pandemic-recovery-are-in-doubt-as-workers-push-back": [
+			"companies"
+		],
+		"chewy-focuses-on-pet-health-in-an-attempt-to-become-more-than-just-a-pandemic-success-story": [
+			"companies"
+		],
+		"the-end-of-gig-work-inside-ubers-fight-to-preserve-its-dna": [
+			"companies"
+		],
+		"uber-faces-competition-and-steep-losses-with-the-expansion-of-delivery-business": [
+			"companies"
+		],
+		"best-buy-is-overhauling-its-stores-to-keep-up-with-online-deliveries-will-it-be-enough-to-take-on-amazon-and-larger-rivals": [
+			"companies"
+		],
+		"match-group-meets-the-metaverse": [
+			"companies"
+		],
+		"teslas-cybertruck-is-facing-a-now-or-never-moment": [
+			"companies"
+		],
+		"omicron-variant-puts-american-airlines-2022-bounce-back-in-peril": [
+			"companies"
+		],
+		"beyond-meat-is-gambling-that-its-partnership-with-mcdonalds-could-put-the-company-back-on-a-growth-track": [
+			"companies"
+		],
+		"twitter-is-aggressively-changing-its-platform-is-it-too-little-too-late": [
+			"companies"
+		],
+		"a-roadmap-to-going-electric-for-the-cost-conscious-shopper": [
+			"personal-finance"
+		],
+		"general-motors-bumpy-road-to-an-all-electric-future": [
+			"companies"
+		],
+		"wwe-releases-more-talent-new-rival-could-reap-benefits": [
+			"companies"
+		],
+		"from-lifestyle-television-brands-to-hbo-how-discovery-ceo-david-zaslav-aims-to-create-a-media-juggernaut": [
+			"companies"
+		],
+		"how-pelotons-jumbled-product-strategy-led-to-trouble-for-the-darling-of-the-pandemic": [
+			"companies"
+		],
+		"wwe-third-quarter-revenue-rebounds-with-the-return-of-live-events": [
+			"companies",
+			"earnings"
+		],
+		"many-delays-hinder-match-groups-hyperconnect-integration-leading-to-underwhelming-third-quarter": [
+			"companies",
+			"earnings"
+		],
+		"supply-chain-disruptions-are-causing-a-ruff-few-months-for-chewy": [
+			"companies",
+			"earnings"
+		],
+		"choosing-cremation-heres-how-to-protect-yourself-from-getting-ripped-off-at-the-funeral-home": [
+			"personal-finance"
+		],
+		"best-buy-beats-wall-street-expectations-in-latest-earnings-report-but-performance-will-depend-on-its-recent-acquisitions-and-member-based-program": [
+			"companies",
+			"earnings"
+		],
+		"match-group-pledges-to-start-abortion-fund": [
+			"companies"
+		],
+		"texass-sb8-makes-seeking-abortion-care-more-costly": [
+			"personal-finance"
+		],
+		"best-buy-wants-to-reduce-their-physical-footprint-to-focus-on-delivery-but-will-it-pay-off": [
+			"companies"
+		],
+		"beyond-meat-reports-dismal-third-quarter-revenue-but-partnerships-could-boost-the-company-in-the-long-term": [
+			"companies",
+			"earnings"
+		],
+		"general-motors-wants-the-impossible-to-beat-out-tesla": [
+			"companies"
+		],
+		"twitter-needs-its-bet-on-paying-users-to-pay-off": [
+			"companies",
+			"stocks-2"
+		],
+		"uber-seeks-to-cut-prices-with-new-pool-rides": [
+			"companies"
+		],
+		"teslas-new-texas-car-insurance-shoots-first-asks-questions-later": [
+			"companies"
+		],
+		"beyond-meats-partnership-with-mcdonalds-is-the-gamechanger-the-company-needs-right-now": [
+			"companies"
+		],
+		"starbucks-massive-wage-hikes-are-poorly-timed-despite-a-labor-shortage": [
+			"companies"
+		],
+		"pinterest-could-become-the-best-video-e-commerce-platform": [
+			"companies"
+		],
+		"pinterests-monthly-active-users-declined-in-the-third-quarter-but-show-signs-of-stabilizing": [
+			"companies",
+			"earnings"
+		],
+		"in-keeping-booze-ban-american-airlines-sides-with-flight-attendants": [
+			"companies"
+		],
+		"ubers-plan-to-offer-tesla-rentals-is-full-of-hot-air": [
+			"companies"
+		],
+		"ubers-3-billion-didi-loss-highlights-the-risk-of-international-stakes": [
+			"companies"
+		],
+		"ubers-sustainable-future-is-a-long-way-off": [
+			"companies"
+		],
+		"peloton-must-prepare-to-battle-with-gyms-and-studios-as-competition-heats-up-in-the-fitness-industry": [
+			"companies"
+		],
+		"discovery-warnermedia-merger-is-the-only-way-to-compete-on-a-large-scale": [
+			"companies"
+		],
+		"discovery-taps-ex-disney-executive-kevin-mayer-as-consultant": [
+			"companies"
+		],
+		"chewy-ceo-hints-at-future-brick-and-mortar-locations-its-a-potential-cat-astrophe": [
+			"companies"
+		],
+		"american-airlines-seats-filling-back-up-ahead-of-holiday-season": [
+			"companies"
+		],
+		"twitter-advertising-fends-off-privacy-issues-plaguing-other-social-media-companies": [
+			"companies",
+			"earnings"
+		],
+		"starbucks-is-shifting-gears-toward-big-wage-spending-and-store-growth-in-latest-earnings": [
+			"companies",
+			"earnings"
+		],
+		"general-motors-plans-to-beat-out-tesla-by-2025": [
+			"companies",
+			"earnings"
+		],
+		"the-high-cost-of-deed-fraud-and-how-to-handle-it": [
+			"personal-finance"
+		],
+		"tesla-hits-record-profit-and-revenue-but-faces-ambitious-expansion-plans": [
+			"companies",
+			"earnings"
+		],
+		"buy-now-pay-later-apps-invite-younger-consumers-to-overspend": [
+			"personal-finance"
+		],
+		"young-investors-are-hoping-for-another-meme-stock-rally-at-the-cost-of-fundamental-market-literacy": [
+			"personal-finance",
+			"stocks-2"
+		],
+		"student-loan-payments-are-coming-back-here-is-what-you-need-to-know": [
+			"personal-finance"
+		],
+		"millennials-tossle-with-the-feelings-of-being-behind-in-a-world-where-saving-is-key": [
+			"personal-finance"
+		],
+		"the-federal-student-loan-borrowers-who-should-pay-their-student-loans": [
+			"personal-finance"
+		],
+		"the-pandemic-has-made-it-almost-impossible-to-buy-a-new-car-dont-expect-that-to-change-anytime-soon": [
+			"personal-finance"
+		],
+		"the-covid-19-pandemic-has-increased-the-cost-and-length-of-a-divorce-for-some-couples-but-there-are-ways-to-ease-the-pain": [
+			"personal-finance"
+		],
+		"credit-card-debt-soars-during-pandemic-but-strategies-reduce-it-remain-the-same": [
+			"personal-finance"
+		],
+		"the-job-search-becomes-less-spooky-this-october": [
+			"personal-finance"
+		],
+		"graduated-and-unemployed-dont-wait-for-an-employee-sponsored-401k-to-save-for-retirement": [
+			"personal-finance"
+		],
+		"squarespace-ceo-sees-more-mergers-acquisitions-in-its-future": [
+			"companies"
+		],
+		"the-snapchat-metaverse-how-augmented-reality-is-changing-e-commerce": [
+			"companies",
+			"previews"
+		],
+		"viacomcbs-ceo-believes-company-can-win-streaming-wars": [
+			"companies"
+		],
+		"fall-travel-bookings-has-hilton-optimistic": [
+			"companies"
+		],
+		"hilton-ceo-sees-a-rebound-but-recovery-could-take-years": [
+			"companies"
+		],
+		"delta-continues-sustainability-campaign-with-new-fuel-partnership": [
+			"companies"
+		],
+		"post-pandemic-air-travel-might-come-with-less-privacy": [
+			"companies"
+		],
+		"revamped-fleet-and-new-markets-have-american-airlines-president-optimistic": [
+			"companies"
+		],
+		"second-set-of-nfts-on-wwe-summerslam-weekend-bring-mixed-results": [
+			"companies"
+		],
+		"uber-says-it-could-reach-a-key-profit-metric-ahead-of-schedule": [
+			"companies"
+		],
+		"pinterest-bets-on-video-to-lift-engagement-appeal-to-younger-users": [
+			"companies"
+		],
+		"chewy-to-launch-marketplace-for-veterinarians-to-sell-pet-meds": [
+			"companies"
+		],
+		"beyond-meat-pushes-forward-with-a-new-product-launch-despite-warnings-of-severe-price-increases-from-a-major-supplier": [
+			"companies"
+		],
+		"uber-says-profitability-is-now-within-reach": [
+			"companies"
+		],
+		"tesla-expands-its-self-driving-tech-to-drivers-despite-safety-concerns": [
+			"companies"
+		],
+		"starbucks-is-facing-a-union-drive-in-buffalo-that-isnt-likely-to-succeed-yet": [
+			"companies"
+		],
+		"best-buy-launches-a-tech-support-membership-following-pilot-program": [
+			"companies"
+		],
+		"peloton-turns-to-the-hospitality-industry-to-boost-sales-and-find-new-subscribers-as-investors-grow-wary-of-the-companys-post-pandemic-future": [
+			"companies"
+		],
+		"american-airlines-flagship-lounges-reopen-pointing-to-confidence-in-international-and-business-travel-return": [
+			"companies"
+		],
+		"twitter-rolls-out-tips-and-bets-on-bitcoin-in-the-process": [
+			"companies"
+		],
+		"executives-43b-warnermedia-discovery-merger-on-track-to-close-by-mid-2022": [
+			"companies"
+		],
+		"general-motors-takes-a-big-step-towards-an-all-electric-vehicle-future": [
+			"companies"
+		],
+		"the-delta-variant-has-hindered-the-airline-rebound-but-a-recovery-is-still-underway": [
+			"stocks-2"
+		],
+		"plant-based-food-sales-are-soaring-while-some-plant-based-stocks-are-tanking": [
+			"stocks-2"
+		],
+		"wall-street-betting-on-sports": [
+			"stocks-2"
+		],
+		"mobile-payment-stocks-are-still-on-the-rise-but-losing-momentum": [
+			"stocks-2"
+		],
+		"as-big-tech-pushes-to-own-a-larger-share-of-chip-production-investors-question-their-positions": [
+			"stocks-2"
+		],
+		"rideshare-apps-struggle-to-regain-footing-after-the-summer-of-delta": [
+			"stocks-2"
+		],
+		"the-automotive-industry-gas-on-full-speed-amid-semiconductor-chip-shortage": [
+			"stocks-2"
+		],
+		"electric-vehicle-darlings-dented-amid-company-speed-bumps": [
+			"stocks-2"
+		],
+		"telecom-companies-and-high-speed-network-are-in-an-unrewarding-relationship": [
+			"stocks-2"
+		],
+		"future-of-fast-food": [
+			"stocks-2"
+		],
+		"e-commerce-stocks-feel-the-sting-of-return-to-in-person-shopping-will-it-last": [
+			"stocks-2"
+		],
+		"rideshare-apps-fall-short-of-demand-stocks-sink": [
+			"stocks-2"
+		],
+		"airlines-still-have-turbulence-ahead": [
+			"stocks-2"
+		],
+		"uber-ceo-says-end-of-its-current-model-is-the-end-of-flexibility": [
+			"companies"
+		],
+		"thriving-in-the-pandemic-mass-merchants-are-the-stock-markets-big-winners": [
+			"stocks-2"
+		],
+		"the-movie-theater-sector-will-be-one-of-the-last-to-recover-investors-agree": [
+			"stocks-2"
+		],
+		"the-pandemic-is-ending-but-its-boost-to-the-online-farmers-market-will-last": [
+			"companies"
+		],
+		"mums-the-word-are-mothers-choosing-to-give-up-their-careers-or-being-booted-out-of-the-labor-force": [
+			"personal-finance"
+		],
+		"as-pandemic-endures-impact-on-households-is-here-to-stay": [
+			"personal-finance"
+		],
+		"fed-up-desperate-and-daring-enough-to-unionize": [],
+		"nvidias-next-frontier-isnt-gaming-its-data-and-supercomputers": [
+			"companies"
+		],
+		"from-ballooning-rent-to-skyrocketing-student-debt-college-educated-millennials-expenses-are-keeping-them-from-saving-money": [
+			"personal-finance"
+		],
+		"a-pandemic-revolution-for-workout-devotees-their-instructors-and-the-gyms-they-used-to-frequent": [],
+		"amazon-may-be-forced-to-break-up-its-e-commerce-empire": [
+			"companies"
+		],
+		"one-year-later-the-tide-is-turning-against-teslas-shanghai-factory": [
+			"companies"
+		],
+		"lululemon-grows-fast-but-its-rivals-do-not-stay-stagnant": [
+			"companies"
+		],
+		"netflix-is-capturing-bollywood-like-it-did-hollywood-other-streamers-want-the-market-too": [
+			"companies"
+		],
+		"pelotons-strength-offering-cant-hold-weight-in-a-post-vaccine-world": [
+			"companies"
+		],
+		"kroger-misses-third-quarter-sales-target-fights-to-keep-up-exponential-growth-during-pandemic": [
+			"companies",
+			"earnings"
+		],
+		"yeti-boomed-on-a-closed-economy-but-faces-steep-competition-in-a-re-opening-one": [
+			"companies"
+		],
+		"lululemon-offset-brick-and-mortar-losses-amid-the-pandemic-with-robust-online-sales": [
+			"companies",
+			"earnings"
+		],
+		"moderna-will-ride-drug-money-and-your-tax-dollars-right-out-of-the-red": [
+			"companies"
+		],
+		"teslas-ambitious-gigafactories-may-pose-risk-to-future-profits": [
+			"companies"
+		],
+		"yeti-posts-record-billion-dollar-earnings-but-is-hitting-snags-before-the-holidays": [
+			"companies",
+			"earnings"
+		],
+		"netflixs-final-frontier-is-in-asia-where-untapped-markets-make-up-billions-of-potential-subscribers": [
+			"companies"
+		],
+		"royal-caribbean-needs-to-convince-seniors-cruising-can-be-safe-and-fun-again": [
+			"companies"
+		],
+		"kroger-hopes-massive-investment-in-online-operation-will-ratchet-up-competition-with-other-grocers": [
+			"companies"
+		],
+		"etsy-bets-on-personalized-gifts-to-keep-hold-of-new-customers": [
+			"companies"
+		],
+		"beyond-meat-bets-on-new-products-as-pandemic-uncertainty-clouds-future": [
+			"companies"
+		],
+		"the-realreal-champions-brick-and-mortar-growth-over-advancing-its-e-commerce-service": [
+			"companies"
+		],
+		"match-group-super-likes-new-brands-hinge-and-blk-to-steal-swipes-from-rival-bumble": [
+			"companies"
+		],
+		"hoping-to-rebound-intel-is-making-big-bet-on-graphics": [
+			"companies"
+		],
+		"the-realreal-gets-a-supply-boost-from-its-retail-chain-but-moves-further-from-profitability": [
+			"companies",
+			"earnings"
+		],
+		"nvidia-rides-the-covid-wave-surpassing-analyst-expectations-for-third-quarter-earnings": [
+			"companies",
+			"earnings"
+		],
+		"delta-is-losing-less-money-per-day-but-its-still-far-from-turning-a-profit": [
+			"companies"
+		],
+		"dating-app-hinge-breaks-out-of-tinders-shadow": [
+			"companies",
+			"earnings"
+		],
+		"will-amazon-let-its-factory-workers-unionize": [
+			"companies"
+		],
+		"tesla-hits-record-in-fifth-straight-profitable-quarter-but-faces-delivery-target-challenge": [
+			"companies",
+			"earnings"
+		],
+		"moderna-investors-ignore-bleeding-bottom-line-for-promise-of-vaccine-payout": [
+			"companies",
+			"earnings"
+		],
+		"beyond-meat-fails-to-capitalize-on-covid-19-momentum": [
+			"companies"
+		],
+		"boeings-2020-was-bad-but-recovery-isnt-off-the-table": [
+			"companies",
+			"stocks-2"
+		],
+		"teslas-impressive-earnings-report-spotlights-opportunity-for-competition": [
+			"companies"
+		],
+		"will-first-dates-on-match-groups-latest-video-chat-feature-lead-to-engagement-in-more-ways-than-one": [
+			"companies"
+		],
+		"now-may-be-the-time-to-catch-the-royal-caribbean-wave-2": [
+			"stocks-2"
+		],
+		"royal-caribbeans-third-quarter-was-really-bad-but-investors-are-looking-toward-a-brighter-future": [
+			"companies",
+			"earnings",
+			"stocks-2"
+		],
+		"netflix-is-investing-heavily-in-india-but-is-struggling-to-capture-the-market": [
+			"companies"
+		],
+		"netflixs-production-machine-is-on-track-to-release-more-titles-in-2021-than-this-year": [
+			"companies"
+		],
+		"keeping-the-good-news-about-capacity-and-prices-coming-tesla-shows-it-is-not-overvalued": [
+			"companies",
+			"stocks-2"
+		],
+		"yeti-too-hot-of-a-stock-is-going-to-chill-soon": [
+			"companies",
+			"stocks-2"
+		],
+		"amazons-profits-skyrocket-in-q3-and-the-company-reveals-an-aggressive-expansion-plan-which-is-too-risky-for-stock-investors": [
+			"companies",
+			"earnings",
+			"stocks-2"
+		],
+		"netflix-subscriptions-overall-prove-underwhelming-but-growth-abroad-looks-promising": [
+			"companies",
+			"earnings"
+		],
+		"pelotons-blockbuster-demand-hits-snag-with-shipping-delays": [
+			"companies"
+		],
+		"etsys-partnership-with-klarna-is-a-boon-for-holiday-shoppers": [
+			"companies"
+		],
+		"deltas-decision-to-continue-blocking-middle-seats-is-the-right-one-for-now": [
+			"companies"
+		],
+		"headline-if-covid-hasnt-forced-beyond-meat-to-establish-loyal-consumers-they-never-will": [
+			"companies",
+			"stocks-2"
+		],
+		"nvidia-should-stick-to-what-it-does-best": [
+			"companies"
+		],
+		"pelotons-secret-weapon-its-fitness-instructors-and-their-social-clout": [
+			"companies"
+		],
+		"now-may-be-the-time-to-catch-the-royal-caribbean-wave": [
+			"stocks-2"
+		],
+		"wall-street-thinks-netflix-is-worth-a-price-hike-but-we-havent-heard-from-main-street": [
+			"companies",
+			"stocks-2"
+		],
+		"pandemic-pushes-online-grocery-sales-sky-high-but-kroger-strategy-leaves-something-to-be-desired": [
+			"companies"
+		],
+		"the-realreals-focus-on-brick-and-mortar-wont-pay-off": [
+			"companies"
+		],
+		"the-end-of-the-road-tesla-is-headed-toward-a-cliff": [
+			"companies",
+			"stocks-2"
+		],
+		"for-intel-manufacturing-is-a-losing-battle-to-win-it-will-need-to-outsource": [
+			"companies"
+		],
+		"well-timed-mirror-purchase-catapults-lululemon-beyond-athleisure": [
+			"companies"
+		],
+		"modernas-trial-diversity-is-all-for-show-if-black-and-brown-medicaid-recipients-cant-afford-a-vaccine": [
+			"companies"
+		],
+		"etsy-cautions-that-its-mask-fueled-momentum-might-be-starting-to-decline": [
+			"companies",
+			"earnings"
+		],
+		"boeing-announces-more-layoffs-as-losses-mount": [
+			"companies",
+			"earnings"
+		],
+		"walgreens-meager-earnings-squeak-past-low-ball-estimates-lifting-shares": [
+			"companies",
+			"earnings",
+			"stocks-2"
+		],
+		"intel-is-having-an-existential-crisis-it-just-isnt-the-best-at-manufacturing-anymore": [
+			"companies",
+			"earnings"
+		],
+		"why-the-pandemic-has-made-going-back-to-school-cheaper-than-ever": [
+			"personal-finance"
+		],
+		"99-of-federal-student-loans-are-in-deferment-what-are-would-be-payments-going-towards": [
+			"personal-finance"
+		],
+		"the-cost-of-leaving-the-public-school-system": [
+			"personal-finance"
+		],
+		"for-single-moms-with-jobs-retirement-planning-doesnt-need-to-be-a-luxury": [
+			"personal-finance"
+		],
+		"for-people-new-to-the-workforce-covid-19-caught-the-early-retirement-dream-on-fire": [
+			"personal-finance"
+		],
+		"facing-a-short-term-furlough-dont-forget-to-prepare": [
+			"personal-finance"
+		],
+		"millennials-face-greater-financial-strain-but-home-ownership-is-not-unattainable-experts-say": [
+			"personal-finance"
+		],
+		"pelotons-stiffest-competition-yet-equinox-expands-the-soulcycle-bike-nationally": [
+			"companies"
+		],
+		"netflix-continues-expansion-into-indian-market-with-first-film-in-tamil": [
+			"companies"
+		],
+		"heres-why-the-pandemic-is-prime-time-to-save-for-a-new-home": [
+			"personal-finance"
+		],
+		"working-from-home-isnt-going-away-so-make-it-work-for-you": [
+			"personal-finance"
+		],
+		"teslas-battery-day-automakers-hyped-up-event-underwhelmed-investors": [
+			"companies",
+			"stocks-2"
+		],
+		"even-in-pandemic-lululemon-expands-stores": [
+			"companies"
+		],
+		"on-battery-day-musk-confident-about-teslas-future-but-experts-are-not": [
+			"companies"
+		],
+		"yeti-cant-keep-up-a-winning-streak-forever-but-hopes-to-by-expanding-its-brand": [
+			"companies"
+		],
+		"delta-to-avoid-many-furloughs-as-stimulus-talks-continue": [
+			"companies"
+		],
+		"u-s-subscribers-could-soon-be-paying-more-on-their-netflix-account": [
+			"companies",
+			"stocks-2"
+		],
+		"nvidias-arm-acquisition-is-not-a-done-deal": [
+			"companies"
+		],
+		"kroger-announces-location-of-new-fulfillment-center-as-demand-for-online-options-grows": [
+			"companies"
+		],
+		"match-group-swipes-right-on-hinges-potential-as-the-next-big-dating-app-after-tinder": [
+			"companies"
+		],
+		"royal-caribbeans-future-brightens-after-assist-from-the-white-house-but-major-obstacles-remain": [
+			"companies"
+		],
+		"investors-distrust-of-the-realreals-authentication-process-reignites-with-a-new-investigation": [
+			"companies",
+			"stocks-2"
+		],
+		"boeing-to-shift-all-787-production-to-south-carolina": [
+			"companies"
+		],
+		"will-the-coronavirus-benefit-amazon-on-prime-day": [
+			"companies"
+		],
+		"moderna-says-vaccine-produces-antibodies-in-seniors-pushes-ahead-in-warp-speed-race": [
+			"companies"
+		],
+		"intel-receives-u-s-government-approval-to-sell-to-huawei": [
+			"companies"
+		],
+		"beyond-meat-gets-comfortable-on-walmarts-shelves": [
+			"companies",
+			"stocks-2"
+		],
+		"with-no-relief-appearing-to-be-on-the-way-airline-stocks-not-get-any-better": [
+			"stocks-2"
+		],
+		"bank-stocks-are-bad-but-cant-get-much-worse": [
+			"stocks-2"
+		],
+		"choices-are-limited-for-earlybird-investors-wanting-to-buy-into-the-commercial-space-industry": [
+			"stocks-2"
+		],
+		"online-furniture-stocks-promise-short-term-shine-but-long-term-luster-in-question": [
+			"stocks-2"
+		],
+		"market-tempers-expectations-for-a-clear-winner-in-the-vaccine-race-ahead-of-highly-anticipated-trial-data": [
+			"stocks-2"
+		],
+		"home-improvement-industry-stays-strong-but-with-more-internal-competition-analysts-say": [
+			"stocks-2"
+		],
+		"tech-selloffs-a-blip-on-the-radar-for-growing-semiconductor-industry": [
+			"stocks-2"
+		],
+		"apparel-tech-an-unlikely-marriage-in-the-stock-market": [
+			"stocks-2"
+		],
+		"cruise-comeback-slows-as-investors-wait-on-the-covid-19-tide-to-turn": [
+			"stocks-2"
+		],
+		"etsy-sellers-face-fees-for-ads-they-did-not-place": [
+			"companies"
+		],
+		"no-e-commerce-no-problem-investors-dont-discount-off-price-retail": [
+			"stocks-2"
+		],
+		"in-the-pandemic-grocery-stocks-are-thriving-but-how-long-will-that-last": [
+			"stocks-2"
+		],
+		"recreation-stocks-surge-as-americans-run-towards-mother-nature": [
+			"stocks-2"
+		],
+		"though-sell-off-continues-for-a-third-week-big-tech-stocks-future-seems-bullish": [
+			"stocks-2"
+		],
+		"the-semiconductor-industry-is-upside-down": [
+			"stocks-2"
+		],
+		"fitnesstrends": [
+			"stocks-2"
+		],
+		"antitrust-suits-weigh-on-sinking-big-tech-stocks": [
+			"stocks-2"
+		],
+		"floating-along-cruise-line-stocks-hold-steady-in-wake-of-coronavirus": [
+			"stocks-2"
+		],
+		"a-costly-move-etsy-shakes-things-up-with-free-shipping": [
+			"companies"
+		],
+		"harley-davidson-misfires-with-female-riders": [
+			"companies"
+		],
+		"square-channels-cash-profits-to-invest-in-business-management-services": [
+			"companies"
+		],
+		"rural-america-faces-roadblocks-in-joining-the-internet-highway": [],
+		"archer-daniels-midlands-bet-on-the-nutrition-industry-is-beginning-to-pay-off": [
+			"companies"
+		],
+		"tech-is-getting-in-on-finance-and-square-can-play-both-sides": [
+			"companies",
+			"previews"
+		],
+		"furniture-and-why-its-something-you-should-consider-renting": [
+			"personal-finance"
+		],
+		"in-the-midst-of-the-apocalypse-artificial-intelligence-can-save-brick-and-mortar-retailers": [
+			"companies"
+		],
+		"nasdaq-ceo-calls-for-trade-wars-end-and-more-open-markets": [
+			"stocks-2"
+		],
+		"directv-now-continues-to-sink-as-parent-att-doubles-down-on-video-bet": [
+			"companies"
+		],
+		"can-streaming-save-atts-media-bets": [
+			"companies"
+		]
+	}
+}
