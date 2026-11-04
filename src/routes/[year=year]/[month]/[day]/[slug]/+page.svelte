@@ -57,11 +57,6 @@
 			{@html post.content}
 		{:else}
 			<p>{post.excerpt}</p>
-			<aside class="restoring">
-				<strong>Full article is being restored.</strong>
-				This story is being moved over from the original Investment Journal site. Only the opening
-				paragraph is available for now.
-			</aside>
 		{/if}
 	</div>
 
@@ -183,16 +178,6 @@
 		overflow-x: auto;
 		font: 400 14px/1.4 var(--f-ui);
 		border-collapse: collapse;
-	}
-	.restoring {
-		font: 400 14px/1.5 var(--f-ui);
-		color: var(--ink-2);
-		background: var(--accent-soft);
-		padding: 14px 16px;
-	}
-	.restoring strong {
-		color: var(--ink);
-		font-weight: 600;
 	}
 	.filed {
 		display: flex;

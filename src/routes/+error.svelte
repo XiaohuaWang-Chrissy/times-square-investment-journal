@@ -10,10 +10,13 @@
 	<h1>{page.status === 404 ? 'We couldn’t find that page.' : 'Something went wrong.'}</h1>
 	<p>
 		{page.status === 404
-			? 'It may not have been moved over from the original site yet.'
+			? 'The link may be mistyped, or the page may have moved. Try searching the archive.'
 			: page.error?.message}
 	</p>
-	<a href={url('/')}>Back to the front page →</a>
+	<div class="links">
+		<a href={url('/search/')}>Search the archive →</a>
+		<a href={url('/')}>Back to the front page →</a>
+	</div>
 </section>
 
 <style>
@@ -33,6 +36,11 @@
 	}
 	p {
 		color: var(--ink-2);
+	}
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px 28px;
 	}
 	a {
 		font: 500 14px/1 var(--f-ui);

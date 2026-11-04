@@ -32,7 +32,7 @@
 			{#each posts as post (post.href)}<StoryCard {post} />{/each}
 		</div>
 	{:else}
-		<p class="empty">No stories here yet. They’ll appear once the archive from the original site is imported.</p>
+		<p class="empty">No stories in this section yet.</p>
 	{/if}
 
 	{#if pages > 1}
