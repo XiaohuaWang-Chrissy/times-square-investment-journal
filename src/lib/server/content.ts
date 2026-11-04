@@ -28,6 +28,30 @@ function firstSentences(text: string, max = 180) {
 	return out.trim();
 }
 
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * WordPress builds excerpts from the first words of the body, which in older posts is often the
+ * reporter's byline ("By: Keira Wingate …", "Pat Elliott …") or a photo credit ("Photo by … on
+ * Unsplash …"). Drop those so summaries start with the story.
+ */
+function cleanExcerpt(text: string, reporter: string) {
+	let out = text;
+	const [first, ...rest] = reporter.trim().split(/\s+/);
+	if (first && rest.length) {
+		// The reporter's own name only; the first name may be shortened (Patrick → Pat).
+		const firstNames = [...new Set([first, first.slice(0, 3)])].map(escapeRe).join('|');
+		out = out.replace(new RegExp(`^(?:by:?\\s+)?(?:${firstNames})\\S*\\s+${escapeRe(rest.join(' '))}\\s+`, 'i'), '');
+	}
+	out = out
+		.replace(
+			/^(?:photo|image|collage|artwork)\b[\s\S]{0,180}?\b(?:unsplash|pexels|shutterstock|wikimedia commons|pixabay|getty images|adobe stock)\b\)?[.:]?\s+/i,
+			''
+		)
+		.replace(/^(?:photo|image):[\s\S]{0,200}?\bsource:[^.]*\.\s+/i, '');
+	return out.trim() || text;
+}
+
 /**
  * Prepare article HTML for this site: WordPress galleries link each thumbnail to an "attachment
  * page" (/YYYY/MM/DD/post/image-name/) that doesn't exist here, so keep the image and drop the
@@ -43,21 +67,23 @@ function toPost(raw: RawPost): Post {
 	const ed = editorialBySlug[raw.slug] ?? {};
 	const cats = [...new Set([...raw.categories, ...(sectionsBySlug[raw.slug] ?? [])])].map(category);
 	const path = permalink(raw.date, raw.slug);
+	const byline = author(raw.author);
+	const excerpt = cleanExcerpt(raw.excerpt, byline.name);
 	return {
 		id: raw.id,
 		slug: raw.slug,
 		date: raw.date,
 		title: raw.title,
-		excerpt: raw.excerpt,
+		excerpt,
 		content: raw.content && withBase(raw.content),
 		image: asset(raw.image),
 		imageAlt: raw.imageAlt ?? '',
 		imageCredit: raw.imageCredit,
-		author: author(raw.author),
+		author: byline,
 		categories: cats,
 		kicker: ed.kicker ?? cats.find((c) => c.slug !== 'news')?.name ?? cats[0]?.name ?? 'News',
 		tickers: ed.tickers ?? [],
-		dek: ed.dek ?? firstSentences(raw.excerpt),
+		dek: ed.dek ?? firstSentences(excerpt),
 		tape: ed.tape ?? raw.title,
 		href: url(path),
 		originalUrl: ORIGIN + path
