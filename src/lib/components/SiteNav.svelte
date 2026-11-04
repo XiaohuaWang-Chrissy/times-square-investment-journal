@@ -31,11 +31,16 @@
 		border-top: 4px solid var(--orange);
 		border-bottom: 1px solid var(--rule);
 	}
+	/* Sections scroll sideways on phones. Lock the vertical axis (overflow-x: auto alone makes it
+	   scrollable too, and iOS then lets the links bounce up and down inside the bar), and keep a
+	   swipe that reaches the end from dragging the page or triggering back navigation. */
 	.wrap {
 		display: flex;
 		align-items: center;
 		gap: 4px;
 		overflow-x: auto;
+		overflow-y: hidden;
+		overscroll-behavior-x: contain;
 		scrollbar-width: none;
 	}
 	.wrap::-webkit-scrollbar {
@@ -47,7 +52,6 @@
 		white-space: nowrap;
 		color: var(--ink-2);
 		border-bottom: 2px solid transparent;
-		margin-bottom: -1px;
 	}
 	a:first-child {
 		padding-left: 0;
