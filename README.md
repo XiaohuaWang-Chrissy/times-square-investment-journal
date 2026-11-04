@@ -11,7 +11,8 @@ npm run dev     # http://localhost:5173
 npm run build   # static site in build/; every page is prerendered
 ```
 
-`npm run deploy` builds the site and publishes it to GitHub Pages through the `gh-pages` branch.
+`npm run deploy` builds the site and publishes it to GitHub Pages (through the `gh-pages` branch) at
+https://tsijournal.com, the domain named in `static/CNAME`.
 
 ## Content
 
