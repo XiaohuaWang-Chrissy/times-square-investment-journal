@@ -13,7 +13,7 @@
 // Photos: Drive links from the form's file upload (folder shared "Anyone with the link").
 // Every image is saved under static/img/form/, so nothing depends on Google links later.
 
-import { mkdir, readFile, writeFile, access } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'node-html-parser';
@@ -311,7 +311,13 @@ async function main() {
 			'\t'
 		) + '\n'
 	);
+	// Remove photos of stories that were deleted from the Sheet, so they aren't published anyway.
+	const used = new Set(posts.flatMap((p) => [p.image, ...[...p.content.matchAll(/src="([^"]+)"/g)].map((m) => m[1])]));
+	const stale = (await readdir(IMG_DIR).catch(() => [])).filter((f) => !used.has(`/img/form/${f}`));
+	for (const f of stale) await rm(path.join(IMG_DIR, f));
+
 	console.log(`Imported ${posts.length} submitted ${posts.length === 1 ? 'story' : 'stories'}.`);
+	if (stale.length) console.log(`Removed ${stale.length} photo${stale.length === 1 ? '' : 's'} no longer used by any story.`);
 	if (problems.length) console.log(`Needs attention:\n  ${problems.join('\n  ')}`);
 }
 
