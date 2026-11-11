@@ -1,5 +1,5 @@
 {
-	"_note": "Hand-written editorial layer on top of the WordPress content. The import scripts never overwrite this file. 'names' renames sections and reporters; 'home' picks the lead and top stories by slug (anything missing falls back to newest-first); 'posts' adds kickers, tickers and short deks keyed by post slug.",
+	"_note": "Hand-written editorial layer on top of the WordPress content. The import scripts never overwrite this file. 'names' renames sections and reporters; 'home' can pin the lead and top stories by slug; leave it empty and the homepage shows the newest stories (the lead is the newest one with a photo); 'posts' adds kickers, tickers and short deks keyed by post slug.",
 	"names": {
 		"categories": {
 			"companies": "Company Insights",
@@ -30,14 +30,7 @@
 			"briannamonsanto": "Brianna Monsanto"
 		}
 	},
-	"home": {
-		"lead": "united-airlines-coasts-past-wall-street-estimates-as-jet-fuel-prices-rise",
-		"top": [
-			"coreweave-junk-bonds-financing",
-			"robinhood-pushes-stock-trading-toward-a-24-7-future",
-			"unitedhealth-to-reset-insurance-business-as-medicare-leader-takes-the-helm"
-		]
-	},
+	"home": {},
 	"posts": {
 		"12006": {
 			"kicker": "Quantum",

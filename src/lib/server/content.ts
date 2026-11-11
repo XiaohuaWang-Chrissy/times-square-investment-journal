@@ -4,9 +4,26 @@ import editorial from '../data/editorial.json';
 import sections from '../data/sections.json';
 import { ORIGIN, author, category, knownCategory, url, type Post } from '../site';
 
-/** The WordPress archive, plus stories submitted through the Google Form (which carry tickers). */
-type RawPost = (typeof archivePosts)[number] & { tickers?: string[] };
-const rawPosts: RawPost[] = [...archivePosts, ...(submissions.posts as RawPost[])];
+/**
+ * A story as stored in posts.json (the WordPress archive) or submissions.json (the Google Form).
+ * Spelled out rather than inferred from the JSON, since the two files differ in which fields are
+ * null (form stories have no WordPress id, and they carry tickers).
+ */
+type RawPost = {
+	id: number | null;
+	slug: string;
+	date: string;
+	title: string;
+	author: string;
+	categories: string[];
+	excerpt: string;
+	content: string | null;
+	image: string | null;
+	imageAlt: string | null;
+	imageCredit: string | null;
+	tickers?: string[];
+};
+const rawPosts: RawPost[] = [...(archivePosts as RawPost[]), ...(submissions.posts as RawPost[])];
 type Editorial = { kicker?: string; tickers?: string[]; dek?: string; tape?: string };
 
 const editorialBySlug: Record<string, Editorial> = editorial.posts;
