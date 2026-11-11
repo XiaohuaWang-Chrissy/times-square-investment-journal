@@ -257,6 +257,7 @@ async function main() {
 		}
 
 		let image = null;
+		let imageAlt = null;
 		const photoId = get('photo') && driveId(get('photo').split(',')[0]);
 		if (photoId) {
 			try {
@@ -264,6 +265,13 @@ async function main() {
 			} catch (e) {
 				problems.push(`"${title}": photo skipped, ${e.message}; share the form's upload folder as "Anyone with the link"`);
 			}
+		}
+		// Otherwise an image placed at the very top of the Google Doc is the story's photo.
+		const lead = !image && content.match(/^<figure><img src="([^"]+)" alt="([^"]*)" \/><\/figure>\n?/);
+		if (lead) {
+			image = lead[1];
+			imageAlt = lead[2] || null;
+			content = content.slice(lead[0].length);
 		}
 
 		// Summary from the paragraphs only, so subheads and list items don't run into it.
@@ -284,7 +292,7 @@ async function main() {
 			excerpt: words.length > 55 ? words.slice(0, 55).join(' ') + '…' : words.join(' '),
 			content,
 			image,
-			imageAlt: null,
+			imageAlt,
 			// The site prints "Photo: …" itself, so drop one the reporter typed.
 			imageCredit: get('caption').replace(/^(photo|image)s?\s*(by|credit)?\s*:?\s*/i, '') || null,
 			tickers: [...new Set(get('tickers').toUpperCase().split(/[\s,;/]+/).filter((t) => /^[A-Z.]{1,6}$/.test(t)))]
