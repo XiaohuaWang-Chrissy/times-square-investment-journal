@@ -10,6 +10,11 @@ cd "$(dirname "$0")/.."
 REMOTE=$(git remote get-url origin)
 REPO=$(basename "$REMOTE" .git)
 
+# Pull in stories submitted through the Google Form, once its Sheet is linked.
+if grep -q '"sheetCsvUrl": *"http' submissions.config.json 2>/dev/null; then
+	node scripts/import-form.mjs || echo "Form import failed; publishing with the stories imported last time."
+fi
+
 if [ -f static/CNAME ]; then
 	DOMAIN=$(tr -d '[:space:]' < static/CNAME)
 	BASE_PATH="" npx vite build

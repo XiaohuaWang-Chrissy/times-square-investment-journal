@@ -1,9 +1,12 @@
-import rawPosts from '../data/posts.json';
+import archivePosts from '../data/posts.json';
+import submissions from '../data/submissions.json';
 import editorial from '../data/editorial.json';
 import sections from '../data/sections.json';
 import { ORIGIN, author, category, knownCategory, url, type Post } from '../site';
 
-type RawPost = (typeof rawPosts)[number];
+/** The WordPress archive, plus stories submitted through the Google Form (which carry tickers). */
+type RawPost = (typeof archivePosts)[number] & { tickers?: string[] };
+const rawPosts: RawPost[] = [...archivePosts, ...(submissions.posts as RawPost[])];
 type Editorial = { kicker?: string; tickers?: string[]; dek?: string; tape?: string };
 
 const editorialBySlug: Record<string, Editorial> = editorial.posts;
@@ -82,7 +85,7 @@ function toPost(raw: RawPost): Post {
 		author: byline,
 		categories: cats,
 		kicker: ed.kicker ?? cats.find((c) => c.slug !== 'news')?.name ?? cats[0]?.name ?? 'News',
-		tickers: ed.tickers ?? [],
+		tickers: ed.tickers ?? raw.tickers ?? [],
 		dek: ed.dek ?? firstSentences(excerpt),
 		tape: ed.tape ?? raw.title,
 		href: url(path),

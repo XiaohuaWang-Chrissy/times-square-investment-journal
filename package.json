@@ -14,7 +14,8 @@
 		"import": "node scripts/import-wxr.mjs",
 		"probe": "node scripts/probe.mjs",
 		"scrape": "node scripts/scrape.mjs",
-		"deploy": "sh scripts/deploy-pages.sh"
+		"deploy": "sh scripts/deploy-pages.sh",
+		"import:form": "node scripts/import-form.mjs"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^4.0.1",
@@ -22,6 +23,7 @@
 		"@sveltejs/vite-plugin-svelte": "^7.2.0",
 		"@types/node": "^24.19.2",
 		"fast-xml-parser": "^4.5.3",
+		"node-html-parser": "^6.1.13",
 		"svelte": "^5.57.2",
 		"svelte-check": "^4.6.0",
 		"typescript": "^6.0.3",

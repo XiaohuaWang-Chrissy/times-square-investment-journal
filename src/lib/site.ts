@@ -1,5 +1,6 @@
 // Client-safe helpers and types. Article data lives in #lib/server/content so it never ships to the browser.
 import taxonomy from './data/taxonomy.json';
+import { authors as submittedAuthors } from './data/submissions.json';
 import { names as editedNames } from './data/editorial.json';
 
 export const ORIGIN = 'https://coveringcompanies.journalism.cuny.edu';
@@ -32,7 +33,10 @@ export type Post = {
 
 // Imported names, with hand-edited ones from editorial.json winning.
 const categoryNames: Record<string, { name: string }> = { ...taxonomy.categories };
-const authorNames: Record<string, { name: string }> = { ...taxonomy.authors };
+const authorNames: Record<string, { name: string }> = {
+	...taxonomy.authors,
+	...(submittedAuthors as Record<string, { name: string }>)
+};
 for (const [slug, name] of Object.entries(editedNames.categories)) categoryNames[slug] = { name };
 for (const [slug, name] of Object.entries(editedNames.authors)) authorNames[slug] = { name };
 

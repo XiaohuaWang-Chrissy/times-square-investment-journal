@@ -1,0 +1,4 @@
+{
+	"_note": "Link to the Sheet's \"Published\" tab, from File → Share → Publish to web → CSV. Used by npm run import:form.",
+	"sheetCsvUrl": ""
+}
