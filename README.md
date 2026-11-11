@@ -11,8 +11,11 @@ npm run dev     # http://localhost:5173
 npm run build   # static site in build/; every page is prerendered
 ```
 
-`npm run deploy` builds the site and publishes it to GitHub Pages (through the `gh-pages` branch) at
-https://tsijournal.com, the domain named in `static/CNAME`.
+The site is published to https://tsijournal.com by the GitHub Actions workflow
+`.github/workflows/deploy.yml`, which imports the latest Google Form submissions, builds and deploys.
+It runs on every push to `main`, whenever the submissions Sheet changes (the Sheet's Apps Script,
+`scripts/sheet-autopublish.gs`, starts it), and on demand with `npm run deploy` or GitHub's
+Actions → Deploy → Run workflow.
 
 ## Content
 
