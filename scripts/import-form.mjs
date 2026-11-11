@@ -75,7 +75,7 @@ function columns(header) {
 	const find = (...words) => header.findIndex((h) => words.some((w) => h.toLowerCase().includes(w)));
 	const photo = header.findIndex((h) => /photo|image|picture|配图/i.test(h) && !/caption|credit|说明/i.test(h));
 	return {
-		time: find('timestamp', '时间'),
+		time: find('timestamp', 'time stamp', 'submitted', 'date', '时间', '日期'),
 		title: find('headline', 'title', '标题'),
 		author: find('author', 'byline', '作者'),
 		body: find('story', 'body', 'text', 'article', '正文'),
@@ -86,14 +86,15 @@ function columns(header) {
 	};
 }
 
-/** "11/10/2026 14:03:22" (US Sheets) or "2026-11-10 14:03:22" → "2026-11-10" */
+/** "11/10/2026 14:03:22" (US Sheets) or "2026-11-10 14:03:22" → "2026-11-10"; null if neither. */
 function sheetDate(value) {
 	const us = value.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
 	if (us) return `${us[3]}-${us[1].padStart(2, '0')}-${us[2].padStart(2, '0')}`;
 	const iso = value.match(/^(\d{4})-(\d{2})-(\d{2})/);
-	if (iso) return iso.slice(1).join('-');
-	return new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+	return iso ? iso.slice(1).join('-') : null;
 }
+
+const today = () => new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
 
 // ---------- downloads ----------
 const exists = (f) => access(f).then(() => true, () => false);
@@ -217,6 +218,9 @@ async function main() {
 	for (const need of ['title', 'author', 'body']) if (col[need] < 0) throw new Error(`The Sheet has no "${need}" column. Headers: ${header.join(' | ')}`);
 
 	const archive = JSON.parse(await readFile(path.join(DATA, 'posts.json'), 'utf8'));
+	// Without a usable timestamp, a story keeps the date it got when first imported.
+	const previous = JSON.parse(await readFile(OUT, 'utf8').catch(() => '{"posts":[]}'));
+	const firstImported = new Map(previous.posts.map((p) => [p.slug, p.date]));
 	const taxonomy = JSON.parse(await readFile(path.join(DATA, 'taxonomy.json'), 'utf8'));
 	const taken = new Set(archive.map((p) => p.slug));
 	const authorByName = new Map(Object.entries(taxonomy.authors).map(([slug, a]) => [a.name.trim().toLowerCase(), slug]));
@@ -267,7 +271,7 @@ async function main() {
 		posts.push({
 			id: null,
 			slug,
-			date: col.time >= 0 ? sheetDate(get('time')) : sheetDate(''),
+			date: sheetDate(get('time')) ?? firstImported.get(slug) ?? today(),
 			title,
 			author: authorSlug,
 			categories: [
