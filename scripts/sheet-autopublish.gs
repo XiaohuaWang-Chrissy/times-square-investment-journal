@@ -5,7 +5,7 @@
  * It starts the site's "Deploy" workflow on GitHub, which reads the Sheet and publishes the site;
  * new stories are live about 2–3 minutes later.
  *
- * Set up once, from the Sheet: Extensions → Apps Script, then
+ * Set up once, from the Sheet (Extensions → Apps Script) or as a standalone project, then
  *   1. Paste this file in place of the sample code and save.
  *   2. Project Settings (gear icon) → Script Properties → Add script property:
  *      GITHUB_TOKEN = the fine-grained GitHub token (this repository only, Actions: Read and write).
@@ -19,11 +19,13 @@
 
 const REPO = 'XiaohuaWang-Chrissy/times-square-investment-journal';
 const WORKFLOW = 'deploy.yml';
+// The submissions Sheet, so the script also works as a standalone project (not opened from the Sheet).
+const SHEET_ID = '10QD76Rw5eUfsogyy1Q7jbIK99RTxuoiXeHGTfit3omA';
 
 /** Run once: add the triggers and send a first publish request to check the token. */
 function install() {
 	ScriptApp.getProjectTriggers().forEach((t) => ScriptApp.deleteTrigger(t));
-	const ss = SpreadsheetApp.getActiveSpreadsheet();
+	const ss = SpreadsheetApp.getActiveSpreadsheet() || SpreadsheetApp.openById(SHEET_ID);
 	ScriptApp.newTrigger('publishSite').forSpreadsheet(ss).onFormSubmit().create();
 	ScriptApp.newTrigger('onSheetChange').forSpreadsheet(ss).onChange().create();
 	publishSite();
