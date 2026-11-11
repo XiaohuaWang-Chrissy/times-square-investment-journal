@@ -1,4 +1,4 @@
 {
-	"_note": "Link to the Sheet's \"Published\" tab, from File → Share → Publish to web → CSV. Used by npm run import:form.",
+	"_note": "CSV link to the form's responses sheet, from File → Share → Publish to web → \"Form Responses 1\" → CSV. Used by npm run import:form.",
 	"sheetCsvUrl": ""
 }

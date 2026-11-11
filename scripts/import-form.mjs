@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 // Import stories that reporters submitted through the Google Form.
 //
-//   npm run import:form            # reads the published "Published" tab of the responses Sheet
+//   npm run import:form            # reads the responses Sheet, published as CSV
 //   npm run import:form -- --csv path/to/test.csv
 //
-// The Sheet tab is published as CSV (File → Share → Publish to web); its link lives in
+// The responses sheet is published as CSV (File → Share → Publish to web); its link lives in
 // submissions.config.json. Each row becomes a story in src/lib/data/submissions.json. Rows are
 // stories the teacher has already edited, so everything in the tab is published.
 //
