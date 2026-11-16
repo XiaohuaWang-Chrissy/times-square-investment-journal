@@ -17,6 +17,7 @@ import { mkdir, readFile, readdir, rm, writeFile, access } from 'node:fs/promise
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'node-html-parser';
+import sharp from 'sharp';
 import { DATA, ROOT, decode, stripTags } from './shared.mjs';
 
 const IMG_DIR = path.join(ROOT, 'static/img/form');
@@ -98,33 +99,95 @@ const today = () => new Date().toLocaleDateString('en-CA', { timeZone: 'America/
 
 // ---------- downloads ----------
 const exists = (f) => access(f).then(() => true, () => false);
-const EXT = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/gif': 'gif', 'image/webp': 'webp' };
 
+/**
+ * Download a photo and make it web-ready: phone photos arrive at 4000+ px and several MB, in
+ * Display P3 with an embedded HDR gain map that makes them glare on HDR screens. Re-encoding
+ * to sRGB at most 1800 px drops the gain map and other metadata (after applying EXIF rotation).
+ * Images with transparency stay PNG; everything else becomes JPEG.
+ */
 async function saveImage(url, name) {
-	for (const ext of Object.values(EXT)) if (await exists(path.join(IMG_DIR, `${name}.${ext}`))) return `/img/form/${name}.${ext}`;
+	for (const ext of ['jpg', 'png']) if (await exists(path.join(IMG_DIR, `${name}.${ext}`))) return `/img/form/${name}.${ext}`;
 	const res = await fetch(url);
 	const type = (res.headers.get('content-type') ?? '').split(';')[0];
-	if (!res.ok || !EXT[type]) throw new Error(`not an image (HTTP ${res.status}, ${type || 'no type'})`);
+	if (!res.ok || !type.startsWith('image/')) throw new Error(`not an image (HTTP ${res.status}, ${type || 'no type'})`);
+	let img;
+	let hasAlpha;
+	try {
+		img = sharp(Buffer.from(await res.arrayBuffer()), { animated: false });
+		({ hasAlpha } = await img.metadata());
+	} catch {
+		throw new Error(`can't read this ${type} file; please upload a JPEG or PNG`);
+	}
+	img = img.rotate().resize({ width: 1800, height: 1800, fit: 'inside', withoutEnlargement: true }).toColourspace('srgb');
+	const ext = hasAlpha ? 'png' : 'jpg';
+	const data = hasAlpha ? await img.png({ compressionLevel: 9 }).toBuffer() : await img.jpeg({ quality: 82, mozjpeg: true }).toBuffer();
 	await mkdir(IMG_DIR, { recursive: true });
-	await writeFile(path.join(IMG_DIR, `${name}.${EXT[type]}`), Buffer.from(await res.arrayBuffer()));
-	return `/img/form/${name}.${EXT[type]}`;
+	await writeFile(path.join(IMG_DIR, `${name}.${ext}`), data);
+	return `/img/form/${name}.${ext}`;
 }
 
 const driveId = (link) => link.match(/[?&]id=([\w-]+)/)?.[1] ?? link.match(/\/d\/([\w-]+)/)?.[1] ?? null;
 
+// ---------- embeds ----------
+// Datawrapper's own script for resizing its charts to fit their content.
+const DATAWRAPPER_RESIZE =
+	'<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>';
+
+const onlyUrl = (t) => /^https?:\/\/\S+$/.test(t);
+
+/**
+ * A story line that stands for something other than a paragraph, or null for an ordinary one.
+ * Charts and videos are rebuilt from their IDs (never from pasted HTML), so a submission can't
+ * put arbitrary code on the site. Returns '' for leftover pieces of pasted embed code.
+ */
+async function specialBlock(line, nextImage, warn) {
+	const t = decode(line).trim();
+	const pastedCode = /<iframe\b/i.test(t);
+
+	const dw = t.match(/datawrapper\.dwcdn\.net\/([A-Za-z0-9]{5})\/(\d+)/) ?? t.match(/datawrapper\.de\/_\/([A-Za-z0-9]{5})/);
+	if (dw && (pastedCode || onlyUrl(t))) {
+		const title = esc(t.match(/\btitle="([^"]*)"/)?.[1] ?? 'Chart');
+		const height = Number(t.match(/\bheight="(\d+)"/)?.[1]) || 400;
+		return `<iframe title="${title}" aria-label="${title}" id="datawrapper-chart-${dw[1]}" src="https://datawrapper.dwcdn.net/${dw[1]}/${dw[2] ?? 1}/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="${height}" data-external="1"></iframe>${DATAWRAPPER_RESIZE}`;
+	}
+	const fl = t.match(/(?:public\.flourish\.studio|flo\.uri\.sh)\/(visualisation|story)\/(\d+)/);
+	if (fl && (pastedCode || onlyUrl(t)))
+		return `<iframe title="Interactive graphic" src="https://flo.uri.sh/${fl[1]}/${fl[2]}/embed" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="520"></iframe>`;
+	const yt = t.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/);
+	if (yt && (pastedCode || onlyUrl(t)))
+		return `<iframe title="Video" src="https://www.youtube-nocookie.com/embed/${yt[1]}" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+
+	// A Google Drive link to a photo, on its own line, becomes a photo in the story.
+	if (onlyUrl(t) && /drive\.google\.com\//.test(t) && driveId(t)) {
+		try {
+			return `<figure><img src="${await nextImage(`${DRIVE}/uc?export=download&id=${driveId(t)}`)}" alt="" /></figure>`;
+		} catch (e) {
+			warn(`a photo link in the story was skipped (${e.message}); share the photo as "Anyone with the link"`);
+			return '';
+		}
+	}
+	// The rest of a pasted embed code (its <script> part, or an embed we don't support).
+	if (pastedCode || /<\/?script\b/i.test(t) || /^!function\(\)/.test(t)) return '';
+	return null;
+}
+
 // ---------- story text ----------
-export function textToHtml(text) {
+/** Pasted story text → paragraphs, with links, charts, videos and Drive photos on their own lines. */
+export async function textToHtml(text, saveImg = async () => '', warn = () => {}) {
 	const linkify = (s) => esc(s).replace(/https?:\/\/[^\s<]+[^\s<.,;:!?)"']/g, (u) => `<a href="${u}">${u}</a>`);
-	return text
-		.split(/\n+/)
-		.map((p) => p.trim())
-		.filter(Boolean)
-		.map((p) => `<p>${linkify(p)}</p>`)
-		.join('\n');
+	let n = 0;
+	const out = [];
+	for (const line of text.split(/\n+/).map((p) => p.trim()).filter(Boolean)) {
+		const special = await specialBlock(line, (url) => saveImg(url, ++n), warn);
+		if (special === null) out.push(`<p>${linkify(line)}</p>`);
+		else if (special) out.push(special);
+	}
+	return out.join('\n');
 }
 
 /** Google Docs' HTML export → the site's article HTML. `saveImg(src, n)` returns a local path. */
-export async function cleanGoogleDoc(html, saveImg) {
+export async function cleanGoogleDoc(html, saveImg, warn = () => {}) {
 	const root = parse(html);
 	// Docs marks bold and italic with generated classes (.c3{font-weight:700}).
 	const css = root.querySelectorAll('style').map((s) => s.text).join('\n');
@@ -175,6 +238,13 @@ export async function cleanGoogleDoc(html, saveImg) {
 		if (tag === 'p' || /^h[1-6]$/.test(tag)) {
 			const html = (await inline(node)).replace(/(<br>\s*)+$/, '').trim();
 			const text = stripTags(html);
+			// A chart, video or Drive photo link (or pasted embed code) on its own line.
+			const special = tag === 'p' && text ? await specialBlock(text, (url) => saveImg(url, ++imgCount), warn) : null;
+			if (special !== null) {
+				if (special) out.push(special);
+				out.push(...figures.splice(0));
+				return;
+			}
 			// Doc headings become the article's subheads: Heading 1–2 → h2, smaller → h3.
 			const as = tag === 'p' ? 'p' : tag === 'h1' || tag === 'h2' ? 'h2' : 'h3';
 			if (text) out.push(`<${as}>${html}</${as}>`);
@@ -242,6 +312,8 @@ async function main() {
 
 		let content = '';
 		const body = get('body');
+		const inlineImage = (src, n) => saveImage(src, `${slug}-${n}`);
+		const warn = (message) => problems.push(`"${title}": ${message}`);
 		const docId = body.match(/docs\.google\.com\/document\/d\/([\w-]+)/)?.[1];
 		try {
 			if (docId) {
@@ -249,8 +321,8 @@ async function main() {
 				const html = await res.text();
 				if (!res.ok || /accounts\.google\.com|ServiceLogin/.test(res.url + html.slice(0, 2000)))
 					throw new Error('the Google Doc isn’t shared as "Anyone with the link"');
-				content = await cleanGoogleDoc(html, (src, n) => saveImage(src, `${slug}-${n}`));
-			} else content = textToHtml(body);
+				content = await cleanGoogleDoc(html, inlineImage, warn);
+			} else content = await textToHtml(body, inlineImage, warn);
 		} catch (e) {
 			problems.push(`"${title}": story text skipped, ${e.message}`);
 			continue;

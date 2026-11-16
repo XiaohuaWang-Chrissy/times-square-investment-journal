@@ -106,6 +106,8 @@ img {
 	display: block;
 	max-width: 100%;
 	height: auto;
+	/* Show phone HDR photos at normal brightness instead of glaring on HDR screens. */
+	dynamic-range-limit: standard;
 }
 h1,
 h2,
