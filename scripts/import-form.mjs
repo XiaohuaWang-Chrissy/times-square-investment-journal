@@ -158,6 +158,19 @@ async function specialBlock(line, nextImage, warn) {
 	if (yt && (pastedCode || onlyUrl(t)))
 		return `<iframe title="Video" src="https://www.youtube-nocookie.com/embed/${yt[1]}" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
 
+	// Generic iframe pasted as HTML in a story line.
+	if (pastedCode) {
+		const srcAttr = t.match(/\bsrc\s*=\s*(["'])(.*?)\1/i)?.[2] ?? t.match(/\bsrc\s*=\s*([^\s>]+)/i)?.[1] ?? '';
+		const src = srcAttr.startsWith('//') ? `https:${srcAttr}` : srcAttr;
+		if (/^https?:\/\//i.test(src)) {
+			const title = esc(t.match(/\btitle\s*=\s*(["'])(.*?)\1/i)?.[2] ?? 'Embedded content');
+			const height = Math.max(180, Number(t.match(/\bheight\s*=\s*(["']?)(\d{2,4})\1/i)?.[2]) || 520);
+			return `<iframe title="${title}" src="${esc(src)}" loading="lazy" frameborder="0" style="width: 100%; border: none;" height="${height}"></iframe>`;
+		}
+		warn('an iframe was skipped because its src was missing or not an http(s) URL');
+		return '';
+	}
+
 	// A Google Drive link to a photo, on its own line, becomes a photo in the story.
 	if (onlyUrl(t) && /drive\.google\.com\//.test(t) && driveId(t)) {
 		try {
@@ -175,7 +188,36 @@ async function specialBlock(line, nextImage, warn) {
 // ---------- story text ----------
 /** Pasted story text → paragraphs, with links, charts, videos and Drive photos on their own lines. */
 export async function textToHtml(text, saveImg = async () => '', warn = () => {}) {
-	const linkify = (s) => esc(s).replace(/https?:\/\/[^\s<]+[^\s<.,;:!?)"']/g, (u) => `<a href="${u}">${u}</a>`);
+	const safeHref = (href) => {
+		const h = decode(href).trim();
+		return /^(https?:\/\/|mailto:)/i.test(h) ? h : null;
+	};
+	const linkify = (s) => {
+		const placeholders = [];
+		const keep = (html) => {
+			const token = `__LINK_${placeholders.length}__`;
+			placeholders.push({ token, html });
+			return token;
+		};
+
+		// Accept raw HTML links from pasted text, but only keep safe href schemes.
+		let t = s.replace(/<a\b[^>]*\bhref\s*=\s*(["'])(.*?)\1[^>]*>([\s\S]*?)<\/a>/gi, (_, _q, href, label) => {
+			const ok = safeHref(href);
+			if (!ok) return stripTags(label || '');
+			return keep(`<a href="${esc(ok)}">${esc(stripTags(label || ok).trim() || ok)}</a>`);
+		});
+
+		// Also accept Markdown links: [label](https://example.com)
+		t = t.replace(/\[([^\]]+)]\((https?:\/\/[^)\s]+)\)/g, (_, label, href) => {
+			const ok = safeHref(href);
+			if (!ok) return label;
+			return keep(`<a href="${esc(ok)}">${esc(label.trim() || ok)}</a>`);
+		});
+
+		t = esc(t).replace(/https?:\/\/[^\s<]+[^\s<.,;:!?)"']/g, (u) => `<a href="${u}">${u}</a>`);
+		for (const { token, html } of placeholders) t = t.replace(token, html);
+		return t;
+	};
 	let n = 0;
 	const out = [];
 	for (const line of text.split(/\n+/).map((p) => p.trim()).filter(Boolean)) {

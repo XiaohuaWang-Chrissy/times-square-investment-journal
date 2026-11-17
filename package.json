@@ -15,7 +15,8 @@
 		"probe": "node scripts/probe.mjs",
 		"scrape": "node scripts/scrape.mjs",
 		"deploy": "sh scripts/deploy-pages.sh",
-		"import:form": "node scripts/import-form.mjs"
+		"import:form": "node scripts/import-form.mjs",
+		"embed:story": "node scripts/embed-story.mjs"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^4.0.1",

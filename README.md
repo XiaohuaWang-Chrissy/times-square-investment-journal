@@ -29,6 +29,62 @@ Actions → Deploy → Run workflow.
 
 The import scripts never touch `sections.json` or `editorial.json`. Password-protected posts are left out.
 
+### Editing submitted stories locally (no Form access)
+
+If you need to add an embed to a story in `src/lib/data/submissions.json` but cannot edit the Google
+Form/Sheet, use the local helper script instead of hand-editing JSON strings.
+
+Current command shape:
+
+```sh
+npm run embed:story -- --slug <story-slug> --provider <datawrapper|iframe|youtube> \
+	--url <embed-url> [--title "..."] [--height 520] \
+	[--after-paragraph N | --after-text "..." | --before-text "..."]
+```
+
+Placement flags:
+
+- `--after-paragraph N` → insert after paragraph `N`
+- `--after-text "..."` → insert after the first paragraph that contains that text
+- `--before-text "..."` → insert before the first paragraph that contains that text
+
+```sh
+# Datawrapper
+npm run embed:story -- --slug costco-wants-a-bigger-slice-of-the-online-sales-pie \
+	--provider datawrapper --url https://datawrapper.dwcdn.net/vuS3E/1/ \
+	--title "Costco, DoorDash market growth" --height 484
+
+# Generic iframe URL
+npm run embed:story -- --slug your-story-slug --provider iframe \
+	--url https://example.com/embed --title "Embedded content" --height 520
+
+# YouTube
+npm run embed:story -- --slug your-story-slug --provider youtube \
+	--url https://www.youtube.com/watch?v=VIDEO_ID --title "Video"
+
+# Place embed after paragraph 8
+npm run embed:story -- --slug your-story-slug --provider datawrapper \
+	--url https://datawrapper.dwcdn.net/ABCDE/1/ --title "Chart" --height 480 \
+	--after-paragraph 8
+
+# Place embed after the first paragraph containing this text fragment
+npm run embed:story -- --slug your-story-slug --provider iframe \
+	--url https://example.com/embed --title "Embedded content" \
+	--after-text "Analysts expect Costco’s revenues"
+
+# Place embed before the first paragraph containing this text fragment
+npm run embed:story -- --slug your-story-slug --provider iframe \
+	--url https://example.com/embed --title "Embedded content" \
+	--before-text "Wall Street seemed to shrug off the stumble"
+```
+
+Tip: `--after-text` / `--before-text` are usually more stable than paragraph numbers while copy is
+still being edited. If the same embed already exists, the script moves it to the new position.
+
+Why this exists: `submissions.json` stores HTML in JSON strings, so pasting raw `<iframe ...>` directly
+into the file can break JSON escaping and trigger editor errors like “Expected comma” or “Colon expected”.
+The helper script writes valid JSON automatically.
+
 Story, section and reporter URLs match the old WordPress permalinks (`/2026/10/12/slug/`,
 `/category/companies/nike/`, `/author/slug/`), so existing links keep working if the site moves back
 to its own domain. The RSS feed is at `/feed.xml`.
