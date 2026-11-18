@@ -100,6 +100,18 @@ function sheetDate(value) {
 
 const today = () => new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
 
+/**
+ * Ticker symbols from the form field. "cost, DASH" is a list, so every entry counts; a field that
+ * reads like a sentence ("UBER Reckons with Driver…", pasted by mistake) keeps only the words
+ * typed in capitals.
+ */
+export function tickerList(field) {
+	const words = field.split(/[\s,;/]+/).filter(Boolean);
+	const sentence = words.length > 4 || words.some((w) => /^[A-Z][a-z]/.test(w));
+	const symbols = sentence ? words.filter((w) => /^[A-Z.]{1,6}$/.test(w)) : words.map((w) => w.toUpperCase());
+	return [...new Set(symbols.filter((w) => /^[A-Z.]{1,6}$/.test(w)))];
+}
+
 // ---------- downloads ----------
 const exists = (f) => access(f).then(() => true, () => false);
 
@@ -427,7 +439,7 @@ async function main() {
 			imageAlt,
 			// The site prints "Photo: …" itself, so drop one the reporter typed.
 			imageCredit: get('caption').replace(/^(photo|image)s?\s*(by|credit)?\s*:?\s*/i, '') || null,
-			tickers: [...new Set(get('tickers').toUpperCase().split(/[\s,;/]+/).filter((t) => /^[A-Z.]{1,6}$/.test(t)))]
+			tickers: tickerList(get('tickers'))
 		});
 	}
 
