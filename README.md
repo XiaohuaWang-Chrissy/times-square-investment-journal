@@ -62,7 +62,7 @@ npm run embed:story -- --slug your-story-slug --provider iframe \
 npm run embed:story -- --slug your-story-slug --provider youtube \
 	--url https://www.youtube.com/watch?v=VIDEO_ID --title "Video"
 
-# Place embed after paragraph 8
+# Place embed after a specific paragraph
 npm run embed:story -- --slug your-story-slug --provider datawrapper \
 	--url https://datawrapper.dwcdn.net/ABCDE/1/ --title "Chart" --height 480 \
 	--after-paragraph 8
