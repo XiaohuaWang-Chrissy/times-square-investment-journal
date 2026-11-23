@@ -11,6 +11,24 @@ npm run dev     # http://localhost:5173
 npm run build   # static site in build/; every page is prerendered
 ```
 
+## Pull the most recent submissions
+
+To refresh local submission data from the Google Form responses Sheet:
+
+```sh
+npm run import:form
+```
+
+This command reads the published CSV URL in `submissions.config.json`, regenerates
+`src/lib/data/submissions.json`, and updates files in `static/img/form/`.
+
+If you also want the latest committed site changes first:
+
+```sh
+git pull origin main
+npm run import:form
+```
+
 The site is published to https://tsijournal.com by the GitHub Actions workflow
 `.github/workflows/deploy.yml`, which imports the latest Google Form submissions, builds and deploys.
 It runs on every push to `main`, whenever the submissions Sheet changes (the Sheet's Apps Script,
