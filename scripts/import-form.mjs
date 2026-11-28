@@ -144,6 +144,23 @@ async function saveImage(url, name) {
 
 const driveId = (link) => link.match(/[?&]id=([\w-]+)/)?.[1] ?? link.match(/\/d\/([\w-]+)/)?.[1] ?? null;
 
+/**
+ * Whether two saved images (site paths like /img/form/x.jpg) show the same picture, even when
+ * downloaded twice at different sizes: compares a 64-bit "difference hash" of each.
+ */
+async function samePicture(a, b) {
+	const hash = async (p) => {
+		const px = await sharp(path.join(ROOT, 'static', p)).resize(9, 8, { fit: 'fill' }).grayscale().raw().toBuffer();
+		return Array.from({ length: 64 }, (_, i) => px[Math.floor(i / 8) * 9 + (i % 8)] > px[Math.floor(i / 8) * 9 + (i % 8) + 1]);
+	};
+	try {
+		const [x, y] = await Promise.all([hash(a), hash(b)]);
+		return x.filter((bit, i) => bit !== y[i]).length <= 6;
+	} catch {
+		return false;
+	}
+}
+
 // ---------- embeds ----------
 // Datawrapper's own script for resizing its charts to fit their content.
 const DATAWRAPPER_RESIZE =
@@ -410,10 +427,15 @@ async function main() {
 				problems.push(`"${title}": photo skipped, ${e.message}; share the form's upload folder as "Anyone with the link"`);
 			}
 		}
-		// Otherwise an image placed at the very top of the Google Doc is the story's photo.
-		const lead = !image && content.match(/^<figure><img src="([^"]+)" alt="([^"]*)" \/><\/figure>\n?/);
-		if (lead) {
+		// An image placed at the very top of the Google Doc is the story's photo, unless one was
+		// uploaded. If the uploaded photo is that same picture, drop the copy from the story so it
+		// doesn't appear twice; a different picture stays in the story.
+		const lead = content.match(/^<figure><img src="([^"]+)" alt="([^"]*)" \/><\/figure>\n?/);
+		if (lead && !image) {
 			image = lead[1];
+			imageAlt = lead[2] || null;
+			content = content.slice(lead[0].length);
+		} else if (lead && (await samePicture(image, lead[1]))) {
 			imageAlt = lead[2] || null;
 			content = content.slice(lead[0].length);
 		}
